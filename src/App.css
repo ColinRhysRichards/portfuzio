@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -21,13 +21,158 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+/* BurgerIcon and Menu CSS */
+.burger-menu,
+.burger-menu.open {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  /* bottom: 40px; */
+  z-index: 9999;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  /* border-radius: 25px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); */ 
+  /* -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out; */
+  transition: all 1s ease-out;
+}
+
+.burger-menu.open {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  /* bottom: 40px; */
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px;
+  /* border-radius: 25px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); */
+}
+
+.burger-menu .bar1,
+.bar2,
+.bar3 {
+  height: 3px;
+  /* background-color: #b2b2b2; */
+  background-color: #23212c;
+  margin: 4px 0;
+  transition: 0.4s;
+  text-align: right;
+}
+
+.bar1{
+  width: 25px;
+}
+.bar2{
+  width: 30px;
+}
+.bar3{
+  width: 20px;
+}
+
+.burger-menu.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
+  background-color: white;
+}
+
+.burger-menu.open .bar2 {
+  opacity: 0;
+}
+
+.burger-menu.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
+  background-color: white;
+}
+
+/* Menu */
+
+.menu {
+  width: 100%;
+  height: 50%;
+  /* margin-top: 4rem; */
+  display: -webkit-inline-box;
+  text-align: center;
+  padding: 0px;
+  background-color: #23212c;
+}
+.menu ul {
+  position: relative;
+  top: 0px;
+  /* font-size: 24px; */
+  padding: 0px;
+  width: 100%;
+}
+.menu li {
+  list-style: outside none none;
+  /* margin: 10px 0px;
+  padding: 0; */
+  cursor: pointer;
+}
+.menu li:hover {
+  color: #ff0000;
+}
+
+.navigationLink{
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+.navigationLink:hover {
+  text-decoration: none;
+  color: rgb(255, 227, 227);
+}
+
+.current{
+color: #b2b2b2;
+}
+
+.menuItemLink{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuItemTitle{
+  /* margin-left: 3rem; */
+  text-align: right;
+  flex-grow: 1;
+  order: 2;
+  margin-right: 8rem;
+  color: white;
+}
+.menuItemNum{
+  margin-left: 8rem;
+  text-align: left;
+  flex-grow: 1;
+  order: 1;
+  color: #b2b2b2;
+}
+
+.menuContactInfo {
+  position: relative;
+}
+/* styling for the the menu background */
+.popupClass{
+  max-height: 0;
+  overflow: hidden; /* Like this your content will not be visible until the height is high enough */
+  transition: max-height ease .5s; /* Animation */
 }
