@@ -1,3 +1,46 @@
+h1{
+ font-family: 'Oswald', sans-serif;
+ line-height: 0.9;
+ font-weight: 900;
+ margin: 0px;
+ text-transform: uppercase;
+ font-size: 8rem;
+ font-style: italic;
+ margin-bottom: 40px;
+ position: relative;
+ display: block;
+ word-break: break-all;
+}
+
+h2{
+  font-family: 'Lobster', cursive;
+}
+
+h3{
+  font-family: 'Oswald', sans-serif;
+}
+
+h4{
+    font-family: 'Lato', sans-serif;
+    color: #1c1b20;
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+h5{
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+h6{
+  font-family: 'Open Sans', sans-serif;
+}
+
 h6 {
   display: block;
   font-size: 0.67em;
@@ -22,6 +65,30 @@ h4 {
   align-content: center;
   align-items: center;
   text-align: center;
+}
+.mobContainer{
+  padding: 20px;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  z-index: 1;
+}
+
+.mobHomeBg{
+  background: linear-gradient(to right, #23212c 50%, white 50%);
+  height: 100vh;
+  width: auto;
+  display: flex;
+  padding: 20px;
+
+}
+
+.homeContainer{
+  background: linear-gradient(to right, #23212c 50%, white 50%);
+}
+
+body{
+  /* background: linear-gradient(to right, #23212c 50%, white 50%); */
 }
 /* .App {
   text-align: center;
@@ -216,12 +283,16 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 flex-wrap: nowrap;
 justify-content: flex-start;
 align-items: center;
+padding: 10px;
 }
 
 .mobMainIcon{
 grid-column: 1;
 justify-self: center;
 align-self: center;
+margin: 0;
+color: rgb(255, 255, 170);
+z-index: 9999;
 }
 
 .mobSectionHeading{
@@ -230,6 +301,9 @@ justify-self: center;
 align-self: center;
 padding-left: 5px;
 border-left: 1px solid #a5a5a5;
+color: #b2b2b2;
+margin: 0;
+z-index: 9999;
 }
 
 .menuContactInfo {
@@ -309,3 +383,21 @@ justify-self: left;
       align-self: center;
       /* align-self: left; */
       }
+
+/* mobtitle.js this is all about the title contianer and its text */
+.titleTextContainer{
+  position: relative;
+  top: 39%;
+}
+.titleText{
+  width: 100%;
+}
+.titleQuoteText{
+  color: white;
+}
+
+.titleSubText{
+  top: 48%;
+  color: red;
+  position: relative;
+}

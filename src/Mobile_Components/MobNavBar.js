@@ -27,7 +27,7 @@ export default class MobNavBar extends React.Component {
   render() {
     return (
       <div className="mobNavContainer">
-        <h1 className="mobMainIcon">C_R</h1>
+        <h3 className="mobMainIcon">$$$</h3>
         <h3 className="mobSectionHeading">{this.props.sectionHeading}</h3>
 
         <Popup
