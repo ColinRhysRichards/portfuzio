@@ -1,53 +1,34 @@
+// DEPENDENCIES
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import Responsive from "react-responsive";
-// import Popup from "reactjs-popup";
+import styled from "styled-components";
 
+// MOBILE CONTAINERS
 import Home from "./Mobile_Views/MobHomeView";
 import Project from "./Mobile_Views/MobProjectView";
 import About from "./Mobile_Views/MobAboutView";
 import Contact from "./Mobile_Views/MobContactView";
-// import Hello from "./Hello";
-// import BurgerIcon from "./BurgerIcon";
-// import Menu from "./Menu";
+
+
+// TABLET CONTAINERS
+
+// DESKTOPCONTAINERS
+
+// GLOBAL CONTAINERS+COMPONENTS
+import GlobalStyle from "./GlobalStyles";
 import "./App.css";
 
 const Mobile = props => <Responsive {...props} maxWidth={767} />;
 const Desktop = props => <Responsive {...props} minWidth={768} />;
 
-// const styles = {
-//   fontFamily: "sans-serif",
-//   textAlign: "center",
-//   marginTop: "40px"
-// };
-// const contentStyle = {
-//   background: "rgba(255,255,255,0)",
-//   width: "100%",
-//   height: "100%",
-//   border: "none"
-// };
-
-// const Home = () => (
-//   <div>
-//     <h2>Home Page </h2>
-//   </div>
-// );
-
-// const Projects = () => (
-//   <div>
-//     <h2>Project Page</h2>
-//   </div>
-// );
-// const About = () => (
-//   <div>
-//     <h2>About Page</h2>
-//   </div>
-// );
-// const Contact = () => (
-//   <div>
-//     <h2>Contact Page</h2>
-//   </div>
-// );
+const MobileContainer = styled.div`
+  height: 100vh;
+  width: 100vw;
+  /* overflow: hidden; */
+  margin: none;
+  /* background-color: green; */
+`;
 
 export default class App extends Component {
   constructor(props) {
@@ -55,7 +36,7 @@ export default class App extends Component {
     this.state = {};
   }
 
-  componentWillMount() {}
+  componentWillMount() { }
 
   render() {
     return (
@@ -65,12 +46,14 @@ export default class App extends Component {
           <h1>what is up chin</h1>
         </Desktop>
         <Mobile>
-          <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/project" component={Project} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
+          <MobileContainer>
+            <Switch>
+              <Route path="/" component={Home} exact />
+              <Route path="/project" component={Project} />
+              <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
+            </Switch>
+          </MobileContainer>
         </Mobile>
         {/* <Router>
         <div>
@@ -93,6 +76,7 @@ export default class App extends Component {
           <Route path="/contact" component={Contact} />
         </div>
       </Router> */}
+        <GlobalStyle />
       </div>
     );
   }

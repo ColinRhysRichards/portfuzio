@@ -2,10 +2,18 @@ import React from "react";
 import MobNavBar from "../Mobile_Components/MobNavBar";
 import MobFooter from "../Mobile_Components/MobFooter";
 import MobTitle from "../Mobile_Components/MobTitle";
+import styled from "styled-components";
+import MobileOpeningCon from "../Mobile_Components/MobileOpeningCon";
+
+const TestWrapper = styled.div`
+
+height: 100%;
+`;
+
 
 const Home = () => {
   return (
-    <div>
+    <TestWrapper>
       {/* <div className="homeContainer">
         <MobNavBar />
         <div className="mobHomeBg">
@@ -14,14 +22,16 @@ const Home = () => {
 
       </div> */}
       <MobNavBar />
+      {/* <MobileOpeningCon bgColor={{ background: "linear-gradient(to top, #23212c 50%, white 50%)" }}> */}
       <MobTitle
-        bgColor={{ background: 'linear-gradient(to bottom, white 50%, #736d92 50%)' }}
+        bgColor={{ background: "linear-gradient(to bottom, white 45% , #926d8c 45%)" }}
         title={"home"}
         subTitle={"section about me"}
-        titleText={"this will be some text that describes me in some way or things that I like"}
+        titleText={"this will be some text me in things that I like"}
         finalText={"final little outro text if I need any"} />
+      {/* </MobileOpeningCon> */}
       <MobFooter />
-    </div>
+    </TestWrapper>
   );
 };
 

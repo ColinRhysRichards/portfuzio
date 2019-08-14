@@ -18,8 +18,8 @@ const mobFooterStyle = {
 
 const mobileIcons = {
   fontSize: "1rem",
-  color: "#DB3EB1",
-  padding: "10px",
+  color: "#CEBF31",
+  paddingBottom: "10px",
   justifySelf: "center",
   alignSelf: "center"
 };

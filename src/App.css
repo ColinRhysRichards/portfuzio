@@ -1,78 +1,4 @@
-h1{
- font-family: 'Oswald', sans-serif;
- line-height: 0.9;
- font-weight: 900;
- margin: 0px;
- text-transform: uppercase;
- font-size: 8rem;
- font-style: italic;
- margin-bottom: 40px;
- position: relative;
- display: block;
- word-break: break-all;
-}
 
-h2{
-  font-family: 'Lobster', cursive;
-}
-
-h3{
-  font-family: 'Oswald', sans-serif;
-}
-
-h4{
-    font-family: 'Lato', sans-serif;
-    color: #1c1b20;
-    font-style: italic;
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    display: inline-block;
-}
-
-h5{
-  font-family: 'Roboto', sans-serif;
-  display: inline-block;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2rem;
-}
-
-h6{
-  font-family: 'Open Sans', sans-serif;
-}
-
-h6 {
-  display: block;
-  font-size: 0.67em;
-  margin-block-start: 1.33em;
-  margin-block-end: 1.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-h4 {
-  display: block;
-  margin-block-start: .33em;
-  margin-block-end: .33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-.mobileContainer{
-  padding: 2rem;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-}
-.mobContainer{
-  padding: 20px;
-  position: absolute;
-  height: 100vh;
-  top: 0;
-  z-index: 1;
-}
 
 .mobHomeBg{
   background: linear-gradient(to right, #23212c 50%, white 50%);
@@ -385,19 +311,8 @@ justify-self: left;
       }
 
 /* mobtitle.js this is all about the title contianer and its text */
-.titleTextContainer{
-  position: relative;
-  top: 39%;
-}
-.titleText{
-  width: 100%;
-}
-.titleQuoteText{
-  color: white;
-}
 
-.titleSubText{
-  top: 48%;
-  color: red;
-  position: relative;
+.projectCardDiv{
+  height: 100vh;
+  top: 0;
 }

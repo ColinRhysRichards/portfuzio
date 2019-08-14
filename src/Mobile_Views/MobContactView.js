@@ -8,7 +8,7 @@ const Contact = () => {
     <div>
       <MobNavBar sectionHeading={"Contact"} />
       <MobTitle
-        bgColor={{ background: 'linear-gradient(to bottom, white 50%, #6d9286 50%)' }}
+        bgColor={{ background: 'linear-gradient(to bottom, white 45%, #6d9286 45%)' }}
         title={"contact"}
         subTitle={"section about me"}
         titleText={"this will be some text that describes me in some way or things that I like"}

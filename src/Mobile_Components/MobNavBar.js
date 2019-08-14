@@ -33,7 +33,7 @@ export default class MobNavBar extends React.Component {
         <Popup
           modal
           overlayStyle={{
-            background: "rgba(155,255,255,0.90)"
+            background: "rgba(199,199,199,0.60)"
           }}
           className={"popupClass"}
           contentStyle={contentStyle}
