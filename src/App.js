@@ -9,6 +9,7 @@ import Home from "./Mobile_Views/MobHomeView";
 import Project from "./Mobile_Views/MobProjectView";
 import About from "./Mobile_Views/MobAboutView";
 import Contact from "./Mobile_Views/MobContactView";
+import Project1 from "./Mobile_Views/Project1";
 
 
 // TABLET CONTAINERS
@@ -52,6 +53,7 @@ export default class App extends Component {
               <Route path="/project" component={Project} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
+              <Route path="/project/project1" component={Project1} />
             </Switch>
           </MobileContainer>
         </Mobile>

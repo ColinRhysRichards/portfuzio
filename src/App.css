@@ -55,57 +55,46 @@ body{
   display: inline-block;
   cursor: pointer;
   grid-column: 4;
-  align-self: center;
-  justify-self: center;
-  /* position: fixed; */
-  /* right: 20px; */
-  /* bottom: 40px; */
+  justify-self: right;
   z-index: 9999;
   background-color: rgb(255, 255, 255);
   padding: 10px;
-  /* border-radius: 25px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); */ 
-  /* -webkit-transition: all 2s ease-out;
-  -moz-transition: all 2s ease-out;
-  -o-transition: all 2s ease-out; */
   transition: all 1s ease-out;
+  /* margin-left: auto; */
 }
 
 .burger-menu.open {
   display: inline-block;
   cursor: pointer;
   grid-column: 4;
-  align-self: center;
-  justify-self: center;
-  /* position: fixed; */
-  /* right: 20px; */
-  /* bottom: 40px; */
+  justify-self: right;
   z-index: 9999;
   background-color: rgba(255, 255, 255, 0);
   padding: 10px;
-  /* border-radius: 25px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); */
+  /* margin-left: auto; */
 }
 
 .burger-menu .bar1,
 .bar2,
 .bar3 {
-  height: 3px;
+  height: 4px;
   /* background-color: #b2b2b2; */
   background-color: #23212c;
-  margin: 4px 0;
+  margin-top: 4px;
   transition: 0.4s;
   text-align: right;
 }
 
 .bar1{
   width: 25px;
+  margin-left: auto;
 }
 .bar2{
   width: 30px;
 }
 .bar3{
   width: 20px;
+  margin-left: auto;
 }
 
 .burger-menu.open .bar1 {
@@ -128,11 +117,8 @@ body{
 
 .menu {
   width: 100%;
-  height: 60%;
-  /* margin-top: 4rem; */
+  height: 100%;
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr; */
   text-align: center;
   padding: 0px;
   background-color: #23212c;
@@ -167,7 +153,7 @@ body{
 
 .current{
 color: #b2b2b2;
-margin-top: 3rem;
+margin-top: 20%;
 }
 
 .menuItemLink{
@@ -185,6 +171,7 @@ margin-top: 3rem;
   order: 2;
   margin-right: 8rem; */
   color: white;
+  text-align: right;
 }
 .menuItemNum{
   /* margin-left: 8rem;
@@ -192,6 +179,7 @@ margin-top: 3rem;
   flex-grow: 1;
   order: 1; */
   color: #b2b2b2;
+  text-align: center;
 }
 
 /* styling for the the menu background */
@@ -199,6 +187,7 @@ margin-top: 3rem;
   max-height: 0;
   overflow: hidden; /* Like this your content will not be visible until the height is high enough */
   transition: max-height ease .5s; /* Animation */
+  /* background-color: green; */
 }
 
 /* Mobile Navbar */
@@ -218,7 +207,7 @@ justify-self: center;
 align-self: center;
 margin: 0;
 color: rgb(255, 255, 170);
-z-index: 9999;
+z-index: 9998;
 }
 
 .mobSectionHeading{
@@ -229,7 +218,7 @@ padding-left: 5px;
 border-left: 1px solid #a5a5a5;
 color: #b2b2b2;
 margin: 0;
-z-index: 9999;
+z-index: 9998;
 }
 
 .menuContactInfo {
@@ -253,8 +242,8 @@ justify-self: left;
 /* align-self: left; */
 }
 .title1{
-  justify-self: left;
-  align-self: center;
+  /* justify-self: left;
+  align-self: center; */
 }
 .num2{
   grid-column-start: 2;
@@ -263,8 +252,8 @@ justify-self: left;
 /* align-self: left; */
 }
 .title2{
-  justify-self: left;
-  align-self: center;
+  /* justify-self: left;
+  align-self: center; */
 }
 .num3{
   grid-column-start: 2;
@@ -273,8 +262,8 @@ justify-self: left;
 /* align-self: left; */
 }
 .title3{
-  justify-self: left;
-  align-self: center;
+  /* justify-self: left;
+  align-self: center; */
 }
 .num4{
 grid-column-start: 2;
@@ -283,8 +272,8 @@ justify-self: left;
 /* align-self: left; */
 }
 .title4{
-  justify-self: left;
-  align-self: center;
+  /* justify-self: left;
+  align-self: center; */
 }
 .num5{
   grid-column-start: 2;

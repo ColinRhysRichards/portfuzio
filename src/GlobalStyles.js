@@ -73,6 +73,10 @@ font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 `;
 
 export default GlobalStyle;

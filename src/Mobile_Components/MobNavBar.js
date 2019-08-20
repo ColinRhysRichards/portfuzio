@@ -17,10 +17,12 @@ import Menu from "../Menu";
 //   marginTop: "40px"
 // };
 const contentStyle = {
-  background: "rgba(255,255,255,0)",
+  background: "green",
   width: "100%",
   height: "100%",
-  border: "none"
+  border: "none",
+  padding: "none"
+
 };
 
 export default class MobNavBar extends React.Component {
@@ -31,11 +33,14 @@ export default class MobNavBar extends React.Component {
         <h3 className="mobSectionHeading">{this.props.sectionHeading}</h3>
 
         <Popup
-          modal
+          arrow={true}
+          modal={true}
+          lockScroll={true}
           overlayStyle={{
-            background: "rgba(199,199,199,0.60)"
+            background: "rgba(199,199,199,0.60)",
+            zIndex: "9998"
           }}
-          className={"popupClass"}
+          // className={"popupClass"}
           contentStyle={contentStyle}
           closeOnDocumentClick={true}
           trigger={open => <BurgerIcon open={open} />}
