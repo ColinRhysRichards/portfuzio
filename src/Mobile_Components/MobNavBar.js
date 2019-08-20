@@ -6,16 +6,9 @@ import Home from "../Mobile_Views/MobHomeView";
 import Project from "../Mobile_Views/MobProjectView";
 import About from "../Mobile_Views/MobAboutView";
 import Contact from "../Mobile_Views/MobContactView";
-// import Hello from "./Hello";
 import BurgerIcon from "../BurgerIcon";
 import Menu from "../Menu";
-// import "./App.css";
 
-// const styles = {
-//   fontFamily: "sans-serif",
-//   textAlign: "center",
-//   marginTop: "40px"
-// };
 const contentStyle = {
   background: "green",
   width: "100%",

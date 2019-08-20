@@ -8,6 +8,9 @@ import Lawyer from '../images/lawyer.jpg';
 import Study from '../images/studyMaterials.jpg';
 import Influencer from "../images/influencer.png";
 import Slc from "../images/slc.jpg";
+import Project1 from "../Mobile_Views/Project1";
+import Project2 from "../Mobile_Views/Project2";
+import Project3 from "../Mobile_Views/Project3";
 
 const TestWrapper = styled.div`
 
@@ -57,18 +60,27 @@ const Home = () => {
         <h1>Featured<br />Projects</h1>
       </FeaturedProjects>
       <ProjectCard
+        path={"/project1"}
+        to={"/project1"}
+        component={Project1}
         className="projectViewProjectCard"
         bgImage={{ backgroundImage: `url(${Lawyer})` }}
         projectTitle={'Attorney Site'}
         projectSubText={'Richards and Richards Lawfirm'}
       />
       <ProjectCard
+        path={"/project2"}
+        to={"/project2"}
+        component={Project2}
         className="projectViewProjectCard"
         bgImage={{ backgroundImage: `url(${Influencer})` }}
         projectTitle={'Mobile Application'}
         projectSubText={'Instagram Influencers'}
       />
       <ProjectCard
+        path={"/project3"}
+        to={"/project3"}
+        component={Project3}
         className="projectViewProjectCard"
         bgImage={{ backgroundImage: `url(${Study})` }}
         projectTitle={'Online Site'}

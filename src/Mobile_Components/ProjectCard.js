@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Popup from "reactjs-popup";
 import { NavLink } from "react-router-dom";
-import Project1 from "../Mobile_Views/Project1";
+
 
 // import ProjectModal from "./ProjectCardModal"
 
@@ -91,10 +91,7 @@ export default class ProjectCard extends React.Component {
   render() {
     return (
       // <div className="turd" style={{ backgroundImage: `url("../src/images/monkeyDLuffy.jpg")` }}>
-      <NavLink
-        component={Project1}
-        to="/project/project1"
-      >
+      <NavLink exact path={this.props.path} to={this.props.to} component={this.props.component}>
         <ProjectTile style={this.props.bgImage}>
           <ProjectTitle>{this.props.projectTitle}</ProjectTitle>
           <ProjectSubText>{this.props.projectSubText}</ProjectSubText>

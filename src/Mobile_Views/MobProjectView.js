@@ -8,6 +8,9 @@ import Luffy from '../images/monkeyDLuffy.jpg';
 import Html from '../images/html.jpg';
 import Lawyer from '../images/lawyer.jpg';
 import Study from '../images/studyMaterials.jpg';
+import Project1 from "../Mobile_Views/Project1";
+import Project2 from "../Mobile_Views/Project2";
+import Project3 from "../Mobile_Views/Project3";
 
 const Project = () => {
   return (
@@ -21,30 +24,45 @@ const Project = () => {
         finalText={"final little outro text if I need any"} />
       {/* <div className="projectCardDiv"></div> */}
       <ProjectCard
+        path={"/project1"}
+        to={"/project1"}
+        component={Project1}
         className="projectViewProjectCard"
         bgImage={{ backgroundImage: `url(${Lawyer})` }}
         projectTitle={'Attorney Site'}
         projectSubText={'Richards and Richards Lawfirm'}
       />
       <ProjectCard
+        path={"/project2"}
+        to={"/project2"}
+        component={Project2}
         className="projectViewProjectCard"
         bgImage={{ backgroundImage: `url(${Luffy})` }}
         projectTitle={'Application'}
         projectSubText={'Pirate King'}
       />
       <ProjectCard
+        path={"/project3"}
+        to={"/project3"}
+        component={Project3}
         className="projectViewProjectCard"
         bgImage={{ backgroundImage: `url(${Html})` }}
         projectTitle={'Game'}
         projectSubText={'Game using HTML'}
       />
       <ProjectCard
+        path={"/project2"}
+        to={"/project2"}
+        component={Project2}
         className="projectViewProjectCard"
         bgImage={{ backgroundImage: `url(${Influencer})` }}
         projectTitle={'Mobile Application'}
         projectSubText={'Instagram Influencers'}
       />
       <ProjectCard
+        path={"/project3"}
+        to={"/project3"}
+        component={Project3}
         className="projectViewProjectCard"
         bgImage={{ backgroundImage: `url(${Study})` }}
         projectTitle={'Online Site'}
