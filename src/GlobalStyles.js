@@ -34,7 +34,14 @@ h1{
 }
 
 h2{
-  font-family: 'Lobster', cursive;
+  display: block;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    font-weight: 900;
+    margin-bottom: 0px;
+    text-transform: none;
+    font-family: "Gilroy", sans-serif;
+    margin-bottom: 2px;
 }
 
 h3{
@@ -55,22 +62,33 @@ h4{
 }
 
 h5{
-  font-family: 'Roboto', sans-serif;
-  display: inline-block;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    overflow: hidden;
+    color: lightgrey;
 }
 
 h6 {
 font-family: 'Open Sans', sans-serif;
-  display: block;
-  font-size: 0.67em;
-  margin-block-start: 1.33em;
-  margin-block-end: 1.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
+display: inline-block;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+p{
+  font-size: 1.2rem;
+  line-height: 1.6;
+    margin-bottom: 0px;
+    margin: 0px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 body.modal-open {

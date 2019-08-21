@@ -37,7 +37,7 @@ const Project = () => {
         to={"/project2"}
         component={Project2}
         className="projectViewProjectCard"
-        bgImage={{ backgroundImage: `url(${Luffy})` }}
+        bgImage={{ backgroundImage: `url(${Study})` }}
         projectTitle={'Application'}
         projectSubText={'Pirate King'}
       />
