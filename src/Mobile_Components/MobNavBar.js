@@ -10,7 +10,7 @@ import BurgerIcon from "../BurgerIcon";
 import Menu from "../Menu";
 
 const contentStyle = {
-  background: "green",
+  background: "#23212c",
   width: "100%",
   height: "100%",
   border: "none",
