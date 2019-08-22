@@ -1,7 +1,9 @@
 import React from "react";
 import MobNavBar from "../Mobile_Components/MobNavBar";
 import styled from "styled-components";
-
+import ProjectPage from "../Mobile_Components/ProjectPage";
+import Lawyer from '../images/utah-lawyer-homepage-hero-3.jpg';
+import Study from '../images/studyMaterials.jpg';
 
 const TestWrapper = styled.div`
 
@@ -12,18 +14,20 @@ height: 100%;
 
 const Project1 = () => {
   return (
-    <TestWrapper>
-      {/* <div className="homeContainer">
-        <MobNavBar />
-        <div className="mobHomeBg">
-          <MobTitle title={"I am a Web Developer"} color={"white"} />
-        </div>
-
-      </div> */}
-      <MobNavBar />
-      {/* <MobileOpeningCon bgColor={{ background: "linear-gradient(to top, #23212c 50%, white 50%)" }}> */}
-      <h1>Project 1</h1>
-    </TestWrapper>
+    <ProjectPage
+      bgColor={{ backgroundColor: "#251f7f" }}
+      projectTitle={"Richards & Richards"}
+      siteDescription={"A website for Richards and Richards Law Firm"}
+      responsive={"responsive"}
+      responsiveResponse={"this will be a whole paragraph about how the site is responsive or something like that it will work and it will be cool"}
+      technologies={"technologies"}
+      technologiesResponse={"this will be a whole paragraph about how the site is responsive or something like that it will work and it will be cool"}
+      planning={"Planning"}
+      planningResponse={"this will be a whole paragraph about how the site is responsive or something like that it will work and it will be cool"}
+      bgImage={{ backgroundImage: `url(${Lawyer})` }}
+      image={{ backgroundImage: `url(${Study})` }}
+      link={"Visit Site"}
+    />
   );
 };
 

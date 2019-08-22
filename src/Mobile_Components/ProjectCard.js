@@ -10,18 +10,22 @@ const ProjectTile = styled.div`
   height: 33vh; 
   background-position: center; 
   background-repeat: no-repeat; 
-  background-size: cover; 
+  background-size: cover;
+  position: relative; 
 `;
 
 const ProjectTitle = styled.h3`
+  position: absolute;
+  top: 70%;
   margin: 0;
-  padding-top: 17rem;
   color: white;
   font-size: 15px;
   padding-left: 2rem;
 `;
 
 const ProjectSubText = styled.h4`
+  position: absolute;
+  top: 75%;
   font-size: 24px;
   color: white;
   padding-left: 2rem;

@@ -1,5 +1,3 @@
-
-
 .mobHomeBg{
   background: linear-gradient(to right, #23212c 50%, white 50%);
   height: 100vh;
@@ -13,43 +11,6 @@
   background: linear-gradient(to right, #23212c 50%, white 50%);
 }
 
-body{
-  /* background: linear-gradient(to right, #23212c 50%, white 50%); */
-}
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-/* BurgerIcon and Menu CSS */
 .burger-menu,
 .burger-menu.open {
   display: inline-block;
@@ -115,26 +76,7 @@ body{
 
 /* Menu */
 
-.menu {
-  width: 100%;
-  height: 80%;
-  display: grid;
-  grid-column: 10% auto auto 10%;
-  text-align: center;
-  padding: 0px;
-  background-color: #23212c;
-}
-.menu ul {
-  position: relative;
-  top: 0px;
-  /* font-size: 24px; */
-  padding: 0px;
-  width: 100%;
-}
 .menu li {
-  /* list-style: outside none none; */
-  /* margin: 10px 0px;
-  padding: 0; */
   cursor: pointer;
 }
 .menu li:hover {
@@ -158,28 +100,10 @@ margin-top: 20%;
 }
 
 .menuItemLink{
-  /* list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; */
+
 }
 
-.menuItemTitle{
-  /* margin-left: 3rem; */
-  /* text-align: right;
-  flex-grow: 1;
-  order: 2;
-  margin-right: 8rem; */
-  color: white;
-  text-align: right;
-  margin: 0;
-}
 .menuItemNum{
-  /* margin-left: 8rem;
-  text-align: left;
-  flex-grow: 1;
-  order: 1; */
   color: #b2b2b2;
   text-align: center;
 }
@@ -243,29 +167,19 @@ grid-column-end: 3;
 justify-self: left;
 /* align-self: left; */
 }
-.title1{
-  /* justify-self: left;
-  align-self: center; */
-}
+
 .num2{
   grid-column-start: 2;
 grid-column-end: 3;
 justify-self: left;
 /* align-self: left; */
 }
-.title2{
-  /* justify-self: left;
-  align-self: center; */
-}
+
 .num3{
   grid-column-start: 2;
 grid-column-end: 3;
 justify-self: left;
 /* align-self: left; */
-}
-.title3{
-  /* justify-self: left;
-  align-self: center; */
 }
 .num4{
 grid-column-start: 2;

@@ -6,7 +6,7 @@ import ProjectCard from '../Mobile_Components/ProjectCard';
 import Influencer from '../images/influencer.png';
 import Luffy from '../images/monkeyDLuffy.jpg';
 import Html from '../images/html.jpg';
-import Lawyer from '../images/lawyer.jpg';
+import Lawyer from '../images/utah-lawyer-homepage-hero-3.jpg';
 import Study from '../images/studyMaterials.jpg';
 import Project1 from "../Mobile_Views/Project1";
 import Project2 from "../Mobile_Views/Project2";
@@ -37,7 +37,7 @@ const Project = () => {
         to={"/project2"}
         component={Project2}
         className="projectViewProjectCard"
-        bgImage={{ backgroundImage: `url(${Study})` }}
+        bgImage={{ backgroundImage: `url(${Luffy})` }}
         projectTitle={'Application'}
         projectSubText={'Pirate King'}
       />

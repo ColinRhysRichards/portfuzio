@@ -3,6 +3,31 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components"
 
 
+const Menu = styled.div`
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-column: 10% auto auto 10%;
+  text-align: center;
+  padding: 0px;
+  background-color: #23212c;
+`;
+
+const Ul = styled.ul`
+  position: relative;
+  top: 0px;
+  /* font-size: 24px; */
+  padding: 0px;
+  width: 100%;
+`;
+
+const MenuLink = styled.h2`
+  color: white;
+  text-align: right;
+  margin: 0;
+  font-weight: 500;
+`;
+
 const Name = styled.h3`
 font-weight: 500;
 font-size: 1.6rem;
@@ -33,8 +58,8 @@ grid-column-start: 2;
 `;
 
 export default ({ close }) => (
-  <div className="menu">
-    <ul>
+  <Menu>
+    <Ul>
       <li>
         <NavLink
           className="navigationLink test"
@@ -42,10 +67,8 @@ export default ({ close }) => (
           activeClassName="current"
           to="/"
         >
-          {/* <div className="menuItemLink"> */}
           <h3 className="menuItemNum num1">01</h3>
-          <h2 className="menuItemTitle title1">Home</h2>
-          {/* </div> */}
+          <MenuLink>Home</MenuLink>
         </NavLink>
       </li>
       <li>
@@ -55,10 +78,8 @@ export default ({ close }) => (
           activeClassName="current"
           to="project"
         >
-          {/* <div className="menuItemLink"> */}
           <h3 className="menuItemNum num2">02</h3>
-          <h2 className="menuItemTitle title2">Projects</h2>
-          {/* </div> */}
+          <MenuLink>Projects</MenuLink>
         </NavLink>
       </li>
       <li>
@@ -68,10 +89,8 @@ export default ({ close }) => (
           activeClassName="current"
           to="about"
         >
-          {/* <div className="menuItemLink"> */}
           <h3 className="menuItemNum num3">03</h3>
-          <h2 className="menuItemTitle title3">About</h2>
-          {/* </div> */}
+          <MenuLink>About</MenuLink>
         </NavLink>
       </li>
       <li>
@@ -81,18 +100,15 @@ export default ({ close }) => (
           activeClassName="current"
           to="contact"
         >
-          {/* <div className="menuItemLink"> */}
           <h3 className="menuItemNum num4">04</h3>
-          <h2 className="menuItemTitle title4">Contact</h2>
-          {/* </div> */}
+          <MenuLink>Contact</MenuLink>
         </NavLink>
       </li>
-    </ul>
-    {/* <hr /> */}
+    </Ul>
     <div className="menuContactInfo">
       <Name>Colin Richards</Name>
       <Email>colin.rhys.richards@gmail.com</Email>
       <Address>github</Address>
     </div>
-  </div>
+  </Menu>
 );
