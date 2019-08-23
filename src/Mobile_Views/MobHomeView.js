@@ -76,6 +76,20 @@ const HomeHeroImg = styled.img`
     background-size: cover;
 `;
 
+const SkillSection = styled.div`
+background-color: #23212c;
+height: 100%;
+padding: 2rem;
+`;
+
+const H4 = styled.h4`
+color: white;
+`;
+
+const H5 = styled.h5`
+font-size: 1.2rem;
+color: #4b3c62;
+`;
 
 const Home = () => {
   return (
@@ -96,7 +110,6 @@ const Home = () => {
         titleText={"this will be some text me in things that I like"}
         finalText={"final little outro text if I need any"} />
       {/* </MobileOpeningCon> */}
-      <MobFooter />
       <HomeHeroImg src={Slc}></HomeHeroImg>
       <Wrapper>
         <FeaturedProjects>
@@ -134,6 +147,15 @@ const Home = () => {
         projectTitle={'Online Site'}
         projectSubText={'The Bookstore'}
       />
+      <SkillSection>
+        <H4>Title of a Section</H4>
+        <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
+        <H4>Title of a Section</H4>
+        <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
+        <H4>Title of a Section</H4>
+        <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
+      </SkillSection>
+      <MobFooter />
     </TestWrapper>
   );
 };

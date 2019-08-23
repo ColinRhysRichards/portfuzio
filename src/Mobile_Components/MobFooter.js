@@ -3,37 +3,67 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faBolt } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import styled from "styled-components";
+
 
 library.add(fab)
 
-const mobFooterStyle = {
-  backgroundColor: "#23212c",
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
-  position: "fixed",
-  bottom: "0",
-  width: "100%",
-  zIndex: '9999'
-};
-
+const IconContainer = styled.div`
+background-Color: "#23212c";
+grid-column: 4 / 6;
+grid-row: 2 / 3;
+display: "grid";
+width: "100%";
+align-self: center;
+`
 const mobileIcons = {
-  fontSize: "1rem",
-  color: "#CEBF31",
-  paddingBottom: "10px",
+  fontSize: "1.6rem",
+  color: "#4b3c62",
+  padding: "8px",
   justifySelf: "center",
   alignSelf: "center"
 };
 
+const Wrapper = styled.div`
+display: grid;
+grid-template-columns: repeat(4, 25%);
+grid-template-rows: repeat(4, 25%);
+background-color: white; 
+`;
+
+const Name = styled.h3`
+color: #4b3c62;
+grid-column: 2 / 4;
+grid-row: 1 / 2;
+`;
+
+const Email = styled.h3`
+color: #4b3c62;
+grid-column: 2 / 4;
+grid-row: 2 / 3;
+`;
+
+const Address = styled.h3`
+color: #4b3c62;
+grid-column: 2 / 4;
+grid-row: 3 / 4;
+`;
+
 export default class MobFooter extends React.Component {
   render() {
     return (
-      <div style={mobFooterStyle}>
-        <FontAwesomeIcon icon={['fab', 'instagram']} style={mobileIcons} />
-        <FontAwesomeIcon icon={['fab', 'facebook']} style={mobileIcons} />
-        <FontAwesomeIcon icon={['fab', 'github']} style={mobileIcons} />
-        <FontAwesomeIcon icon={['fab', 'google']} style={mobileIcons} />
-        <FontAwesomeIcon icon={['fab', 'linkedin']} style={mobileIcons} />
-      </div>
+      <Wrapper>
+        <Name>Colin Richards</Name>
+        <Email>colin.rhys.richards@gmail.com</Email>
+        <Address>Salt Lake City, UT</Address>
+        <IconContainer>
+          <FontAwesomeIcon icon={['fab', 'instagram']} style={mobileIcons} />
+          <FontAwesomeIcon icon={['fab', 'facebook']} style={mobileIcons} />
+          <FontAwesomeIcon icon={['fab', 'github']} style={mobileIcons} />
+          <FontAwesomeIcon icon={['fab', 'google']} style={mobileIcons} />
+          <FontAwesomeIcon icon={['fab', 'linkedin']} style={mobileIcons} />
+        </IconContainer>
+      </Wrapper>
     );
   }
 }

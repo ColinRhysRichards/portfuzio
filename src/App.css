@@ -87,6 +87,8 @@
   text-decoration: none;
   color: white;
   width: 100%;
+  display: flex;
+    justify-content: space-between;
 }
 
 .navigationLink:hover {
@@ -94,10 +96,10 @@
   color: rgb(255, 227, 227);
 }
 
-.current{
+/* .current{
 color: #b2b2b2;
 margin-top: 20%;
-}
+} */
 
 .menuItemLink{
 
@@ -155,11 +157,10 @@ z-index: 9998;
   grid-template-rows: 10% 10% 10%;
   /* grid-row-gap: 1px; */
 }
-.test {
+/* .test {
   display: grid;
   grid-template-columns: 20% auto auto 20%;
-  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-}
+} */
 
 .num1{
 grid-column-start: 2;
