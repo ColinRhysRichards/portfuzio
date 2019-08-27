@@ -26,10 +26,12 @@ const NavContainer = styled.div`
   background-color: transparent;
  `;
 
+
 export default class DesktopNav extends React.Component {
   render() {
     return (
       <NavContainer>
+
         <Popup
           arrow={true}
           modal={true}

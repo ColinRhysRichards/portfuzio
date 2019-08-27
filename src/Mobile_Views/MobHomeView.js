@@ -15,6 +15,7 @@ import Mobile from "../Mobile_Components/Mobile";
 import Desktop from "../Mobile_Components/Desktop";
 import LeftBorder from "../Mobile_Components/LeftBorder";
 import RightBorder from "../Mobile_Components/RightBorder";
+import TopBorder from "../Mobile_Components/TopBorder";
 // import DesktopWrapper from "../Mobile_Components/DesktopWrapper";
 
 const TestWrapper = styled.div`
@@ -107,17 +108,6 @@ background-color: #f8f8f8;
 color: red;
 `;
 
-const TopBorder = styled.div`
-width: 100%;
-height: 4rem;
-display: grid;
-grid-template-columns: 10% auto 10%;
-background-color: white;
-position: fixed;
-top: 0;
-z-index: 9999;
-`;
-
 const BottomBorder = styled.div`
 height: 4rem;
 width: 100%;
@@ -133,7 +123,7 @@ const Home = () => {
   return (
     <>
       <Desktop>
-        <TopBorder></TopBorder>
+        <TopBorder sectionTitle={"Home"} />
         <LeftBorder></LeftBorder>
         <RightBorder></RightBorder>
         <BottomBorder></BottomBorder>
