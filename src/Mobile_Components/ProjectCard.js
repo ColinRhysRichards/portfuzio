@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Popup from "reactjs-popup";
 import { NavLink } from "react-router-dom";
+import Mobile from "../Mobile_Components/Mobile";
+import Desktop from "../Mobile_Components/Desktop";
 
 
 const ProjectTile = styled.div`
@@ -12,6 +14,17 @@ const ProjectTile = styled.div`
   background-repeat: no-repeat; 
   background-size: cover;
   position: relative; 
+`;
+
+const DesktopProjectTile = styled.div`
+  width: 33%;
+  background-color: #cccccc; 
+  height: 50vh; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  position: relative; 
+  display: inline-block;
 `;
 
 const ProjectTitle = styled.h3`
@@ -34,13 +47,25 @@ const ProjectSubText = styled.h4`
 export default class ProjectCard extends React.Component {
   render() {
     return (
-      <NavLink exact path={this.props.path} to={this.props.to} component={this.props.component}>
-        <ProjectTile style={this.props.bgImage}>
-          <ProjectTitle>{this.props.projectTitle}</ProjectTitle>
-          <ProjectSubText>{this.props.projectSubText}</ProjectSubText>
-          {/* <ProjectModal /> */}
-        </ProjectTile>
-      </NavLink>
+      <>
+        <Desktop>
+          <NavLink exact path={this.props.path} to={this.props.to} component={this.props.component}>
+            <DesktopProjectTile style={this.props.bgImage}>
+              <ProjectTitle>{this.props.projectTitle}</ProjectTitle>
+              <ProjectSubText>{this.props.projectSubText}</ProjectSubText>
+            </DesktopProjectTile>
+          </NavLink>
+        </Desktop>
+
+        <Mobile>
+          <NavLink exact path={this.props.path} to={this.props.to} component={this.props.component}>
+            <ProjectTile style={this.props.bgImage}>
+              <ProjectTitle>{this.props.projectTitle}</ProjectTitle>
+              <ProjectSubText>{this.props.projectSubText}</ProjectSubText>
+            </ProjectTile>
+          </NavLink>
+        </Mobile>
+      </>
     );
   }
 }
