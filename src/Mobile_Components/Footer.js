@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faBolt } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import styled from "styled-components";
-
+import Mobile from "./Mobile";
+import Desktop from "./Desktop";
 
 library.add(fab)
 
@@ -49,21 +50,33 @@ grid-column: 2 / 4;
 grid-row: 3 / 4;
 `;
 
-export default class MobFooter extends React.Component {
+export default class Footer extends React.Component {
   render() {
     return (
-      <Wrapper>
-        <Name>Colin Richards</Name>
-        <Email>colin.rhys.richards@gmail.com</Email>
-        <Address>Salt Lake City, UT</Address>
-        <IconContainer>
-          <FontAwesomeIcon icon={['fab', 'instagram']} style={mobileIcons} />
-          <FontAwesomeIcon icon={['fab', 'facebook']} style={mobileIcons} />
-          <FontAwesomeIcon icon={['fab', 'github']} style={mobileIcons} />
-          <FontAwesomeIcon icon={['fab', 'google']} style={mobileIcons} />
-          <FontAwesomeIcon icon={['fab', 'linkedin']} style={mobileIcons} />
-        </IconContainer>
-      </Wrapper>
+      <>
+        <Desktop>
+          <Wrapper>
+            <Name>Colin Richards</Name>
+            <Email>colin.rhys.richards@gmail.com</Email>
+            <Address>Salt Lake City, UT</Address>
+          </Wrapper>
+        </Desktop>
+
+        <Mobile>
+          <Wrapper>
+            <Name>Colin Richards</Name>
+            <Email>colin.rhys.richards@gmail.com</Email>
+            <Address>Salt Lake City, UT</Address>
+            <IconContainer>
+              <FontAwesomeIcon icon={['fab', 'instagram']} style={mobileIcons} />
+              <FontAwesomeIcon icon={['fab', 'facebook']} style={mobileIcons} />
+              <FontAwesomeIcon icon={['fab', 'github']} style={mobileIcons} />
+              <FontAwesomeIcon icon={['fab', 'google']} style={mobileIcons} />
+              <FontAwesomeIcon icon={['fab', 'linkedin']} style={mobileIcons} />
+            </IconContainer>
+          </Wrapper>
+        </Mobile>
+      </>
     );
   }
 }

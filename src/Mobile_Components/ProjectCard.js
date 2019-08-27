@@ -17,7 +17,7 @@ const ProjectTile = styled.div`
 `;
 
 const DesktopProjectTile = styled.div`
-  width: 33%;
+  width: 33.33%;
   background-color: #cccccc; 
   height: 50vh; 
   background-position: center; 

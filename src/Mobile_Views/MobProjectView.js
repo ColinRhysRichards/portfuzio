@@ -1,6 +1,7 @@
 import React from "react";
+import styled from "styled-components";
 import MobNavBar from "../Mobile_Components/MobNavBar";
-import MobFooter from "../Mobile_Components/MobFooter";
+import MobFooter from "../Mobile_Components/Footer";
 import MobTitle from "../Mobile_Components/MobTitle";
 import ProjectCard from '../Mobile_Components/ProjectCard';
 import Influencer from '../images/influencer.png';
@@ -13,13 +14,52 @@ import Project2 from "../Mobile_Views/Project2";
 import Project3 from "../Mobile_Views/Project3";
 import Mobile from "../Mobile_Components/Mobile";
 import Desktop from "../Mobile_Components/Desktop";
+import LeftBorder from "../Mobile_Components/LeftBorder";
+import RightBorder from "../Mobile_Components/RightBorder";
+import TopBorder from "../Mobile_Components/TopBorder";
+import DesktopTitle from "../Mobile_Components/DesktopTitle";
+import Footer from "../Mobile_Components/Footer";
+
+const BottomBorder = styled.div`
+height: 4rem;
+width: 100%;
+display: grid;
+grid-template-rows: 10% auto 10%;
+background-color: white;
+position: fixed;
+bottom: 0;
+z-index: 9999;
+`;
+
+
+const DesktopWrapper = styled.div`
+height: 100%;
+width: auto;
+max-width: 100%;
+margin: 4rem; 
+background-color: #f8f8f8;
+color: black;
+`;
 
 const Project = () => {
   return (
-    <>
+    <div>
       <Desktop>
-        <h1>Desktop Project Page</h1>
+        <TopBorder sectionTitle={"Projects"} />
+        <LeftBorder></LeftBorder>
+        <RightBorder></RightBorder>
+        <BottomBorder></BottomBorder>
+        <DesktopWrapper>
+          <DesktopTitle
+            bgColor={{ background: "linear-gradient(to bottom, #f8f8f8 45% , #926d8c 45%)" }}
+            title={"projects"}
+            subTitle={"section about me"}
+            titleText={"this will be some text me in things that I like"}
+            finalText={"final little outro text if I need any"} />
+          <Footer />
+        </DesktopWrapper>
       </Desktop>
+
       <Mobile>
         <MobNavBar sectionHeading={"Projects"} />
         <MobTitle
@@ -28,7 +68,6 @@ const Project = () => {
           subTitle={"section about me"}
           titleText={"this will be some text that describes me in some way or things that I like"}
           finalText={"final little outro text if I need any"} />
-        {/* <div className="projectCardDiv"></div> */}
         <ProjectCard
           path={"/project1"}
           to={"/project1"}
@@ -76,7 +115,7 @@ const Project = () => {
         />
         <MobFooter />
       </Mobile>
-    </>
+    </div>
   );
 };
 

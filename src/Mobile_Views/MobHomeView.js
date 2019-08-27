@@ -1,6 +1,6 @@
 import React from "react";
 import MobNavBar from "../Mobile_Components/MobNavBar";
-import MobFooter from "../Mobile_Components/MobFooter";
+import Footer from "../Mobile_Components/Footer";
 import MobTitle from "../Mobile_Components/MobTitle";
 import DesktopTitle from "../Mobile_Components/DesktopTitle";
 import styled from "styled-components";
@@ -46,7 +46,7 @@ width: auto;
 max-width: 100%;
 margin: 4rem; 
 background-color: #f8f8f8;
-color: red;
+color: black;
 `;
 
 const BottomBorder = styled.div`
@@ -112,6 +112,7 @@ const Home = () => {
               projectSubText={'The Bookstore'}
             />
           </ProjectCardContainer>
+          <Footer />
         </DesktopWrapper>
       </Desktop>
 
@@ -161,7 +162,7 @@ const Home = () => {
             <H4>Title of a Section</H4>
             <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
           </SkillSection>
-          <MobFooter />
+          <Footer />
         </TestWrapper>
       </Mobile>
     </>
