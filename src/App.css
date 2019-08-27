@@ -18,7 +18,7 @@
   grid-column: 4;
   justify-self: right;
   z-index: 9999;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   padding: 10px;
   transition: all 1s ease-out;
   /* margin-left: auto; */
@@ -96,26 +96,15 @@
   color: rgb(255, 227, 227);
 }
 
-/* .current{
-color: #b2b2b2;
-margin-top: 20%;
-} */
-
-.menuItemLink{
-
-}
-
 .menuItemNum{
   color: #b2b2b2;
   text-align: center;
 }
 
-/* styling for the the menu background */
 .popupClass{
   max-height: 0;
   overflow: hidden; /* Like this your content will not be visible until the height is high enough */
   transition: max-height ease .5s; /* Animation */
-  /* background-color: green; */
 }
 
 /* Mobile Navbar */

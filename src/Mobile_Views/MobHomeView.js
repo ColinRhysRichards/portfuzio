@@ -11,6 +11,11 @@ import Slc from "../images/slc.jpg";
 import Project1 from "../Mobile_Views/Project1";
 import Project2 from "../Mobile_Views/Project2";
 import Project3 from "../Mobile_Views/Project3";
+import Mobile from "../Mobile_Components/Mobile";
+import Desktop from "../Mobile_Components/Desktop";
+import LeftBorder from "../Mobile_Components/LeftBorder";
+import RightBorder from "../Mobile_Components/RightBorder";
+// import DesktopWrapper from "../Mobile_Components/DesktopWrapper";
 
 const TestWrapper = styled.div`
 
@@ -91,72 +96,129 @@ font-size: 1.2rem;
 color: #4b3c62;
 `;
 
+
+const DesktopWrapper = styled.div`
+/* background-color: ${props => props.isBlack ? "black" : "aqua"}; */
+height: 100%;
+width: auto;
+max-width: 100%;
+margin: 4rem; 
+background-color: #f8f8f8;
+color: red;
+`;
+
+const TopBorder = styled.div`
+width: 100%;
+height: 4rem;
+display: grid;
+grid-template-columns: 10% auto 10%;
+background-color: white;
+position: fixed;
+top: 0;
+z-index: 9999;
+`;
+
+const BottomBorder = styled.div`
+height: 4rem;
+width: 100%;
+display: grid;
+grid-template-rows: 10% auto 10%;
+background-color: white;
+position: fixed;
+bottom: 0;
+z-index: 9999;
+`;
+
 const Home = () => {
   return (
-    <TestWrapper>
-      {/* <div className="homeContainer">
+    <>
+      <Desktop>
+        <TopBorder></TopBorder>
+        <LeftBorder></LeftBorder>
+        <RightBorder></RightBorder>
+        <BottomBorder></BottomBorder>
+        <DesktopWrapper>
+          <h1>What is up Chi Hon Es</h1>
+          <h1>What is up Chi Hon Es</h1>
+          <h1>What is up Chi Hon Es</h1>
+          <h1>What is up Chi Hon Es</h1>
+          <h1>What is up Chi Hon Es</h1>
+          <h1>What is up Chi Hon Es</h1>
+          <h1>What is up Chi Hon Es</h1>
+          <h1>What is up Chi Hon Es</h1>
+          <h1>What is up Chi Hon Es</h1>
+          <h1>What is up Chi Hon Es</h1>
+          <h1>What is up Chi Hon Es</h1>
+        </DesktopWrapper>
+      </Desktop>
+
+      <Mobile>
+        <TestWrapper>
+          {/* <div className="homeContainer">
         <MobNavBar />
         <div className="mobHomeBg">
           <MobTitle title={"I am a Web Developer"} color={"white"} />
         </div>
 
       </div> */}
-      <MobNavBar />
-      {/* <MobileOpeningCon bgColor={{ background: "linear-gradient(to top, #23212c 50%, white 50%)" }}> */}
-      <MobTitle
-        bgColor={{ background: "linear-gradient(to bottom, white 45% , #926d8c 45%)" }}
-        title={"home"}
-        subTitle={"section about me"}
-        titleText={"this will be some text me in things that I like"}
-        finalText={"final little outro text if I need any"} />
-      {/* </MobileOpeningCon> */}
-      <HomeHeroImg src={Slc}></HomeHeroImg>
-      <Wrapper>
-        <FeaturedProjects>
-          <H1>Featured<br />Projects</H1>
-        </FeaturedProjects>
-        <BottomDiv></BottomDiv>
-        <H1outline>Featured<br />Projects</H1outline>
+          <MobNavBar />
+          {/* <MobileOpeningCon bgColor={{ background: "linear-gradient(to top, #23212c 50%, white 50%)" }}> */}
+          <MobTitle
+            bgColor={{ background: "linear-gradient(to bottom, white 45% , #926d8c 45%)" }}
+            title={"home"}
+            subTitle={"section about me"}
+            titleText={"this will be some text me in things that I like"}
+            finalText={"final little outro text if I need any"} />
+          {/* </MobileOpeningCon> */}
+          <HomeHeroImg src={Slc}></HomeHeroImg>
+          <Wrapper>
+            <FeaturedProjects>
+              <H1>Featured<br />Projects</H1>
+            </FeaturedProjects>
+            <BottomDiv></BottomDiv>
+            <H1outline>Featured<br />Projects</H1outline>
 
 
-      </Wrapper>
-      <ProjectCard
-        path={"/project1"}
-        to={"/project1"}
-        component={Project1}
-        className="projectViewProjectCard"
-        bgImage={{ backgroundImage: `url(${Lawyer})` }}
-        projectTitle={'Attorney Site'}
-        projectSubText={'Richards and Richards Lawfirm'}
-      />
-      <ProjectCard
-        path={"/project2"}
-        to={"/project2"}
-        component={Project2}
-        className="projectViewProjectCard"
-        bgImage={{ backgroundImage: `url(${Influencer})` }}
-        projectTitle={'Mobile Application'}
-        projectSubText={'Instagram Influencers'}
-      />
-      <ProjectCard
-        path={"/project3"}
-        to={"/project3"}
-        component={Project3}
-        className="projectViewProjectCard"
-        bgImage={{ backgroundImage: `url(${Study})` }}
-        projectTitle={'Online Site'}
-        projectSubText={'The Bookstore'}
-      />
-      <SkillSection>
-        <H4>Title of a Section</H4>
-        <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
-        <H4>Title of a Section</H4>
-        <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
-        <H4>Title of a Section</H4>
-        <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
-      </SkillSection>
-      <MobFooter />
-    </TestWrapper>
+          </Wrapper>
+          <ProjectCard
+            path={"/project1"}
+            to={"/project1"}
+            component={Project1}
+            className="projectViewProjectCard"
+            bgImage={{ backgroundImage: `url(${Lawyer})` }}
+            projectTitle={'Attorney Site'}
+            projectSubText={'Richards and Richards Lawfirm'}
+          />
+          <ProjectCard
+            path={"/project2"}
+            to={"/project2"}
+            component={Project2}
+            className="projectViewProjectCard"
+            bgImage={{ backgroundImage: `url(${Influencer})` }}
+            projectTitle={'Mobile Application'}
+            projectSubText={'Instagram Influencers'}
+          />
+          <ProjectCard
+            path={"/project3"}
+            to={"/project3"}
+            component={Project3}
+            className="projectViewProjectCard"
+            bgImage={{ backgroundImage: `url(${Study})` }}
+            projectTitle={'Online Site'}
+            projectSubText={'The Bookstore'}
+          />
+          <SkillSection>
+            <H4>Title of a Section</H4>
+            <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
+            <H4>Title of a Section</H4>
+            <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
+            <H4>Title of a Section</H4>
+            <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
+          </SkillSection>
+          <MobFooter />
+        </TestWrapper>
+      </Mobile>
+    </>
   );
 };
 

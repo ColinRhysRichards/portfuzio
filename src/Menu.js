@@ -110,7 +110,7 @@ const mobileIcons = {
 export default ({ close }) => (
   <Menu>
 
-    <NavigationContainer>+
+    <NavigationContainer>
       <NavLink
         className="navigationLink test"
         onClick={close}

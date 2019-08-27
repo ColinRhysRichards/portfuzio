@@ -1,8 +1,9 @@
 // DEPENDENCIES
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Responsive from "react-responsive";
 import styled from "styled-components";
+import Mobile from "./Mobile_Components/Mobile";
+import Desktop from "./Mobile_Components/Desktop";
 
 // MOBILE CONTAINERS
 import Home from "./Mobile_Views/MobHomeView";
@@ -21,9 +22,6 @@ import Project3 from "./Mobile_Views/Project3";
 // GLOBAL CONTAINERS+COMPONENTS
 import GlobalStyle from "./GlobalStyles";
 import "./App.css";
-
-const Mobile = props => <Responsive {...props} maxWidth={767} />;
-const Desktop = props => <Responsive {...props} minWidth={768} />;
 
 const MobileContainer = styled.div`
   height: 100vh;
@@ -45,22 +43,15 @@ export default class App extends Component {
     return (
       <div>
         {/* <Hello name="Create cool burger menu using reactjs-popup" /> */}
-        <Desktop>
-          <h1>what is up chin</h1>
-        </Desktop>
-        <Mobile>
-          <MobileContainer>
-            <Switch>
-              <Route path="/" component={Home} exact />
-              <Route path="/project" component={Project} />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/project1" component={Project1} />
-              <Route path="/project2" component={Project2} />
-              <Route path="/project3" component={Project3} />
-            </Switch>
-          </MobileContainer>
-        </Mobile>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/project" component={Project} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/project1" component={Project1} />
+          <Route path="/project2" component={Project2} />
+          <Route path="/project3" component={Project3} />
+        </Switch>
         {/* <Router>
         <div>
           <Popup
