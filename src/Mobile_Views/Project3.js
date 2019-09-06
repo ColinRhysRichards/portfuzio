@@ -1,5 +1,5 @@
 import React from "react";
-import MobNavBar from "../Mobile_Components/MobNavBar";
+import NavBar from "../Mobile_Components/NavBar";
 import styled from "styled-components";
 
 
@@ -14,13 +14,13 @@ const Project3 = () => {
   return (
     <TestWrapper>
       {/* <div className="homeContainer">
-        <MobNavBar />
+        <NavBar />
         <div className="mobHomeBg">
           <MobTitle title={"I am a Web Developer"} color={"white"} />
         </div>
 
       </div> */}
-      <MobNavBar />
+      <NavBar />
       {/* <MobileOpeningCon bgColor={{ background: "linear-gradient(to top, #23212c 50%, white 50%)" }}> */}
       <h1>Project 3</h1>
     </TestWrapper>

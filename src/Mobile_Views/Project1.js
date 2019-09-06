@@ -1,5 +1,5 @@
 import React from "react";
-import MobNavBar from "../Mobile_Components/MobNavBar";
+import NavBar from "../Mobile_Components/NavBar";
 import styled from "styled-components";
 import ProjectPage from "../Mobile_Components/ProjectPage";
 import Lawyer from '../images/utah-lawyer-homepage-hero-3.jpg';

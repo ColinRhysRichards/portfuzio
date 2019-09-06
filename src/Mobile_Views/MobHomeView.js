@@ -1,5 +1,5 @@
 import React from "react";
-import MobNavBar from "../Mobile_Components/MobNavBar";
+import NavBar from "../Mobile_Components/NavBar";
 import Footer from "../Mobile_Components/Footer";
 import MobTitle from "../Mobile_Components/MobTitle";
 import DesktopTitle from "../Mobile_Components/DesktopTitle";
@@ -118,7 +118,7 @@ const Home = () => {
 
       <Mobile>
         <TestWrapper>
-          <MobNavBar />
+          <NavBar />
           <MobTitle
             bgColor={{ background: "linear-gradient(to bottom, white 45% , #926d8c 45%)" }}
             title={"home"}

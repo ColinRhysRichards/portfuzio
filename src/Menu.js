@@ -4,6 +4,8 @@ import styled from "styled-components"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import Mobile from "./Mobile_Components/Mobile";
+import Desktop from "./Mobile_Components/Desktop";
 
 library.add(fab)
 
@@ -108,64 +110,122 @@ const mobileIcons = {
 };
 
 export default ({ close }) => (
-  <Menu>
+  <>
+    <Desktop>
+      <Menu>
 
-    <NavigationContainer>
-      <NavLink
-        className="navigationLink test"
-        onClick={close}
-        activeClassName="current"
-        to="/"
-      >
-        <h3 className="menuItemNum num1">01</h3>
-        <MenuLink>Home</MenuLink>
-      </NavLink>
+        <NavigationContainer>
+          <NavLink
+            className="navigationLink test"
+            onClick={close}
+            activeClassName="current"
+            to="/"
+          >
+            <h3 className="menuItemNum num1">01</h3>
+            <MenuLink>Home</MenuLink>
+          </NavLink>
 
-      <NavLink
-        className="navigationLink test"
-        onClick={close}
-        activeClassName="current"
-        to="project"
-      >
-        <h3 className="menuItemNum num2">02</h3>
-        <MenuLink>Projects</MenuLink>
-      </NavLink>
+          <NavLink
+            className="navigationLink test"
+            onClick={close}
+            activeClassName="current"
+            to="project"
+          >
+            <h3 className="menuItemNum num2">02</h3>
+            <MenuLink>Projects</MenuLink>
+          </NavLink>
 
-      <NavLink
-        className="navigationLink test"
-        onClick={close}
-        activeClassName="current"
-        to="about"
-      >
-        <h3 className="menuItemNum num3">03</h3>
-        <MenuLink>About</MenuLink>
-      </NavLink>
+          <NavLink
+            className="navigationLink test"
+            onClick={close}
+            activeClassName="current"
+            to="about"
+          >
+            <h3 className="menuItemNum num3">03</h3>
+            <MenuLink>About</MenuLink>
+          </NavLink>
 
-      <NavLink
-        className="navigationLink test"
-        onClick={close}
-        activeClassName="current"
-        to="contact"
-      >
-        <h3 className="menuItemNum num4">04</h3>
-        <MenuLink>Contact</MenuLink>
-      </NavLink>
+          <NavLink
+            className="navigationLink test"
+            onClick={close}
+            activeClassName="current"
+            to="contact"
+          >
+            <h3 className="menuItemNum num4">04</h3>
+            <MenuLink>Contact</MenuLink>
+          </NavLink>
 
-    </NavigationContainer>
+        </NavigationContainer>
 
-    <ContactContainer>
-      <Name>Colin Richards</Name>
-      <Email>colin.rhys.richards@gmail.com</Email>
-      <Address>github</Address>
-    </ContactContainer>
+        <ContactContainer>
+          <Name>Colin Richards</Name>
+          <Email>colin.rhys.richards@gmail.com</Email>
+          <Address>github</Address>
+        </ContactContainer>
+      </Menu>
+    </Desktop>
 
-    <IconContainer>
-      <FontAwesomeIcon icon={['fab', 'instagram']} style={mobileIcons} />
-      <FontAwesomeIcon icon={['fab', 'facebook']} style={mobileIcons} />
-      <FontAwesomeIcon icon={['fab', 'github']} style={mobileIcons} />
-      <FontAwesomeIcon icon={['fab', 'google']} style={mobileIcons} />
-      <FontAwesomeIcon icon={['fab', 'linkedin']} style={mobileIcons} />
-    </IconContainer>
+    <Mobile>
+      <Menu>
 
-  </Menu>
+        <NavigationContainer>
+          <NavLink
+            className="navigationLink test"
+            onClick={close}
+            activeClassName="current"
+            to="/"
+          >
+            <h3 className="menuItemNum num1">01</h3>
+            <MenuLink>Home</MenuLink>
+          </NavLink>
+
+          <NavLink
+            className="navigationLink test"
+            onClick={close}
+            activeClassName="current"
+            to="project"
+          >
+            <h3 className="menuItemNum num2">02</h3>
+            <MenuLink>Projects</MenuLink>
+          </NavLink>
+
+          <NavLink
+            className="navigationLink test"
+            onClick={close}
+            activeClassName="current"
+            to="about"
+          >
+            <h3 className="menuItemNum num3">03</h3>
+            <MenuLink>About</MenuLink>
+          </NavLink>
+
+          <NavLink
+            className="navigationLink test"
+            onClick={close}
+            activeClassName="current"
+            to="contact"
+          >
+            <h3 className="menuItemNum num4">04</h3>
+            <MenuLink>Contact</MenuLink>
+          </NavLink>
+
+        </NavigationContainer>
+
+        <ContactContainer>
+          <Name>Colin Richards</Name>
+          <Email>colin.rhys.richards@gmail.com</Email>
+          <Address>github</Address>
+        </ContactContainer>
+
+        <IconContainer>
+          <FontAwesomeIcon icon={['fab', 'instagram']} style={mobileIcons} />
+          <FontAwesomeIcon icon={['fab', 'facebook']} style={mobileIcons} />
+          <FontAwesomeIcon icon={['fab', 'github']} style={mobileIcons} />
+          <FontAwesomeIcon icon={['fab', 'google']} style={mobileIcons} />
+          <FontAwesomeIcon icon={['fab', 'linkedin']} style={mobileIcons} />
+        </IconContainer>
+
+      </Menu>
+    </Mobile>
+  </>
 );

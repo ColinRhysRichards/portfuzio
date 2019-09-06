@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MobNavBar from "../Mobile_Components/MobNavBar";
+import NavBar from "../Mobile_Components/NavBar";
 import MobFooter from "../Mobile_Components/Footer";
 import MobTitle from "../Mobile_Components/MobTitle";
 import Mobile from "../Mobile_Components/Mobile";
@@ -21,7 +21,6 @@ position: fixed;
 bottom: 0;
 z-index: 9999;
 `;
-
 
 const DesktopWrapper = styled.div`
 height: 100%;
@@ -52,7 +51,7 @@ const About = () => {
       </Desktop>
 
       <Mobile>
-        <MobNavBar sectionHeading={"About"} />
+        <NavBar sectionHeading={"About"} />
         <MobTitle
           bgColor={{ background: 'linear-gradient(to bottom, white 45%, #926d79 45%)' }}
           title={"about"}

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MobNavBar from "../Mobile_Components/MobNavBar";
+import NavBar from "../Mobile_Components/NavBar";
 import Footer from "../Mobile_Components/Footer";
 import MobTitle from "../Mobile_Components/MobTitle";
 import Mobile from "../Mobile_Components/Mobile";
@@ -51,7 +51,7 @@ const Contact = () => {
       </Desktop>
 
       <Mobile>
-        <MobNavBar sectionHeading={"Contact"} />
+        <NavBar sectionHeading={"Contact"} />
         <MobTitle
           bgColor={{ background: 'linear-gradient(to bottom, white 45%, #6d9286 45%)' }}
           title={"contact"}

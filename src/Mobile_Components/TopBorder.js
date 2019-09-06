@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import DesktopNav from "./DesktopNav";
 
 const Div = styled.div`
 width: 100%;

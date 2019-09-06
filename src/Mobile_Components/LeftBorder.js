@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import DesktopNav from "./DesktopNav";
+import NavBar from "./NavBar";
 
 const Div = styled.div`
 width: 4rem;
@@ -25,7 +25,7 @@ const LeftBorder = () => {
     return (
         <Div>
             <MenuDiv>
-                <DesktopNav />
+                <NavBar />
             </MenuDiv>
         </Div>
     );

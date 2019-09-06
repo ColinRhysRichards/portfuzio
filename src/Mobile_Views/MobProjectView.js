@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MobNavBar from "../Mobile_Components/MobNavBar";
+import NavBar from "../Mobile_Components/NavBar";
 import MobFooter from "../Mobile_Components/Footer";
 import MobTitle from "../Mobile_Components/MobTitle";
 import ProjectCard from '../Mobile_Components/ProjectCard';
@@ -61,7 +61,7 @@ const Project = () => {
       </Desktop>
 
       <Mobile>
-        <MobNavBar sectionHeading={"Projects"} />
+        <NavBar sectionHeading={"Projects"} />
         <MobTitle
           bgColor={{ background: 'linear-gradient(to bottom, white 45%, #8c926d 45%)' }}
           title={"projects"}
