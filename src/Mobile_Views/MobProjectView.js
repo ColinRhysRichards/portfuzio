@@ -36,9 +36,13 @@ const DesktopWrapper = styled.div`
 height: 100%;
 width: auto;
 max-width: 100%;
-margin: 4rem; 
+margin: 4rem 4rem 0rem 4rem; 
 background-color: #f8f8f8;
 color: black;
+`;
+
+const ProjectCardContainer = styled.div`
+display: block;
 `;
 
 const Project = () => {
@@ -51,13 +55,42 @@ const Project = () => {
         <BottomBorder></BottomBorder>
         <DesktopWrapper>
           <DesktopTitle
-            bgColor={{ background: "linear-gradient(to bottom, #f8f8f8 45% , #926d8c 45%)" }}
+            bgColor={{ background: 'linear-gradient(to bottom, white 45%, #8c926d 45%)' }}
             title={"projects"}
             subTitle={"section about me"}
             titleText={"this will be some text me in things that I like"}
             finalText={"final little outro text if I need any"} />
-          <Footer />
         </DesktopWrapper>
+        <ProjectCardContainer>
+          <ProjectCard
+            path={"/project1"}
+            to={"/project1"}
+            component={Project1}
+            className="projectViewProjectCard"
+            bgImage={{ backgroundImage: `url(${Lawyer})` }}
+            projectTitle={'Attorney Site'}
+            projectSubText={'Richards and Richards Lawfirm'}
+          />
+          <ProjectCard
+            path={"/project2"}
+            to={"/project2"}
+            component={Project2}
+            className="projectViewProjectCard"
+            bgImage={{ backgroundImage: `url(${Influencer})` }}
+            projectTitle={'Mobile Application'}
+            projectSubText={'Instagram Influencers'}
+          />
+          <ProjectCard
+            path={"/project3"}
+            to={"/project3"}
+            component={Project3}
+            className="projectViewProjectCard"
+            bgImage={{ backgroundImage: `url(${Study})` }}
+            projectTitle={'Online Site'}
+            projectSubText={'The Bookstore'}
+          />
+        </ProjectCardContainer>
+        <Footer />
       </Desktop>
 
       <Mobile>

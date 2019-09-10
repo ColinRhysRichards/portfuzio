@@ -44,7 +44,7 @@ const DesktopWrapper = styled.div`
 height: 100%;
 width: auto;
 max-width: 100%;
-margin: 4rem; 
+margin: 4rem 4rem 0rem 4rem; 
 background-color: #f8f8f8;
 color: black;
 `;

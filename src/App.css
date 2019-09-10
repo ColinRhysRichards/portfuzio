@@ -73,6 +73,70 @@
   transform: rotate(45deg) translate(-6px, -6px);
   background-color: white;
 }
+/* Desktop Burger Menu */
+
+.dburger-menu,
+.dburger-menu.open {
+  display: inline-block;
+  cursor: pointer;
+  grid-column: 4;
+  justify-self: right;
+  z-index: 9999;
+  background-color: transparent;
+  padding: 5px;
+  transition: all 1s ease-out;
+  /* margin-left: auto; */
+}
+
+.dburger-menu.open {
+  display: inline-block;
+  cursor: pointer;
+  grid-column: 4;
+  justify-self: right;
+  z-index: 9999;
+  background-color: white;
+  padding: 5px;
+  /* margin-left: auto; */
+}
+
+.dburger-menu .dbar1,
+.dbar2,
+.dbar3 {
+  height: 4px;
+  /* background-color: #b2b2b2; */
+  background-color: black;
+  margin-top: 4px;
+  transition: 0.4s;
+  text-align: right;
+}
+
+.dbar1{
+  width: 30px;
+  /* margin-left: auto; */
+}
+.dbar2{
+  width: 30px;
+}
+.dbar3{
+  width: 30px;
+  /* margin-left: auto; */
+}
+
+.dburger-menu.open .dbar1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
+  background-color: #ff0000;
+}
+
+.dburger-menu.open .dbar2 {
+  opacity: 0;
+}
+
+.dburger-menu.open .dbar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
+  background-color: #ff0000;
+}
 
 /* Menu */
 

@@ -26,7 +26,7 @@ const DesktopWrapper = styled.div`
 height: 100%;
 width: auto;
 max-width: 100%;
-margin: 4rem; 
+margin: 4rem 4rem 0rem 4rem; 
 background-color: #f8f8f8;
 color: black;
 `;
@@ -41,7 +41,7 @@ const Contact = () => {
         <BottomBorder></BottomBorder>
         <DesktopWrapper>
           <DesktopTitle
-            bgColor={{ background: "linear-gradient(to bottom, #f8f8f8 45% , #926d8c 45%)" }}
+            bgColor={{ background: 'linear-gradient(to bottom, white 45%, #6d9286 45%)' }}
             title={"contact"}
             subTitle={"section about me"}
             titleText={"this will be some text me in things that I like"}

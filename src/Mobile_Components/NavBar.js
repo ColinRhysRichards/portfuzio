@@ -22,7 +22,7 @@ const contentStyle = {
 };
 
 const desktopContentStyle = {
-  background: "#23212c",
+  background: "black",
   width: "50%",
   height: "100%",
   border: "none",
@@ -49,9 +49,9 @@ export default class NavBar extends React.Component {
               modal={true}
               lockScroll={true}
               overlayStyle={{
-                background: "black",
+                background: "white",
                 zIndex: "9998",
-                width: "80%"
+                width: "50%"
               }}
               contentStyle={desktopContentStyle}
               closeOnDocumentClick={true}
@@ -69,7 +69,7 @@ export default class NavBar extends React.Component {
 
         <Mobile>
           <div className="mobNavContainer">
-            <h3 className="mobMainIcon">$$$</h3>
+            <h3 className="mobMainIcon">colin richards</h3>
             <h3 className="mobSectionHeading">{this.props.sectionHeading}</h3>
 
             <Popup

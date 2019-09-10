@@ -26,7 +26,7 @@ const Project1 = () => {
       planningResponse={"this will be a whole paragraph about how the site is responsive or something like that it will work and it will be cool"}
       bgImage={{ backgroundImage: `url(${Lawyer})` }}
       image={{ backgroundImage: `url(${Study})` }}
-      link={"Visit Site"}
+      link={"https://www.rbrlawgroup.com"}
     />
   );
 };

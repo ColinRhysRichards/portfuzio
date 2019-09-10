@@ -20,6 +20,16 @@ const Menu = styled.div`
   background-color: #23212c;
 `;
 
+const DesktopMenu = styled.div`
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 10% repeat(6, 15%);
+  padding: 0px;
+  background-color: white;
+`;
+
 const Ul = styled.ul`
   position: relative;
   top: 0px;
@@ -37,14 +47,23 @@ const MenuLink = styled.h3`
   align-self: center;
 `;
 
+const DesktopMenuLink = styled.h3`
+  color: black;
+  text-align: right;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2rem;
+  align-self: center;
+`;
+
 const NavLinkContainer = styled.div`
 justify-content: space-between;
 display: flex;
 grid-column: 2 / 3;
 grid-row: 2 / 3;
 align-self: center;
-    text-align: left;
-    width: 100%;
+text-align: left;
+width: 100%;
 `;
 
 const Name = styled.h3`
@@ -93,6 +112,28 @@ text-align: left;
 color: lightgray;
 `;
 
+const DesktopNavigationContainer = styled.div`
+background-Color: white;
+grid-column: 2 / 3;
+grid-row: 2 / 4;
+display: grid;
+/* grid-template-rows: repeat(4, 25%); */
+width: 100%;
+align-self: center;
+text-align: left;
+/* justify-content: space-between; */
+`;
+
+const DesktopContactContainer = styled.div`
+background-Color: white;
+grid-column: 2 / 3;
+grid-row: 5 / 6;
+width: 100%;
+align-self: center;
+text-align: left;
+color: lightgray;
+`;
+
 const IconContainer = styled.div`
 background-Color: #23212c;
 grid-column: 2 / 3;
@@ -112,9 +153,9 @@ const mobileIcons = {
 export default ({ close }) => (
   <>
     <Desktop>
-      <Menu>
+      <DesktopMenu>
 
-        <NavigationContainer>
+        <DesktopNavigationContainer>
           <NavLink
             className="navigationLink test"
             onClick={close}
@@ -122,7 +163,7 @@ export default ({ close }) => (
             to="/"
           >
             <h3 className="menuItemNum num1">01</h3>
-            <MenuLink>Home</MenuLink>
+            <DesktopMenuLink>Home</DesktopMenuLink>
           </NavLink>
 
           <NavLink
@@ -132,7 +173,7 @@ export default ({ close }) => (
             to="project"
           >
             <h3 className="menuItemNum num2">02</h3>
-            <MenuLink>Projects</MenuLink>
+            <DesktopMenuLink>Projects</DesktopMenuLink>
           </NavLink>
 
           <NavLink
@@ -142,7 +183,7 @@ export default ({ close }) => (
             to="about"
           >
             <h3 className="menuItemNum num3">03</h3>
-            <MenuLink>About</MenuLink>
+            <DesktopMenuLink>About</DesktopMenuLink>
           </NavLink>
 
           <NavLink
@@ -152,17 +193,17 @@ export default ({ close }) => (
             to="contact"
           >
             <h3 className="menuItemNum num4">04</h3>
-            <MenuLink>Contact</MenuLink>
+            <DesktopMenuLink>Contact</DesktopMenuLink>
           </NavLink>
 
-        </NavigationContainer>
+        </DesktopNavigationContainer>
 
-        <ContactContainer>
+        <DesktopContactContainer>
           <Name>Colin Richards</Name>
           <Email>colin.rhys.richards@gmail.com</Email>
           <Address>github</Address>
-        </ContactContainer>
-      </Menu>
+        </DesktopContactContainer>
+      </DesktopMenu>
     </Desktop>
 
     <Mobile>

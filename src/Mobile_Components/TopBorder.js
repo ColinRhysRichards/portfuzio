@@ -22,16 +22,17 @@ text-align: left;
 `;
 
 const MainIcon = styled.h3`
-color: red;
-font-size: 1.6rem;
-display: inline-block;
-padding-right: 5px;
-`;
-
-const SectionHeading = styled.h3`
 color: black;
 font-size: 1.6rem;
 display: inline-block;
+padding-right: 1rem;
+`;
+
+const SectionHeading = styled.h3`
+color: #dddddd;
+font-size: 1.6rem;
+display: inline-block;
+font-style: italic;
 `;
 
 
@@ -41,7 +42,7 @@ export default class TopBorder extends React.Component {
         return (
             <Div>
                 <MenuDiv>
-                    <MainIcon>$$$</MainIcon>
+                    <MainIcon>Colin Richards</MainIcon>
                     <SectionHeading>{this.props.sectionTitle}</SectionHeading>
                 </MenuDiv>
             </Div>
