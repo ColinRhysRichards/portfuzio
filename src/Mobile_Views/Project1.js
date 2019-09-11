@@ -15,7 +15,7 @@ height: 100%;
 const Project1 = () => {
   return (
     <ProjectPage
-      bgColor={{ backgroundColor: "#251f7f" }}
+      bgColor={{ backgroundColor: "#104e7d" }}
       projectTitle={"Richards & Richards"}
       siteDescription={"A website for Richards and Richards Law Firm"}
       responsive={"responsive"}

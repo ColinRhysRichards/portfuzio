@@ -7,7 +7,7 @@ import Slc from "../images/slc.jpg"
 const HomeHeroImg = styled.img`
     width: 100%;
     background-color: #cccccc;
-    height: 25vh;
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -30,7 +30,7 @@ margin: 4rem 4rem 0rem 4rem;
 background-color: #f8f8f8;
 color: black;
 `;
-
+// #926d79
 const About = () => {
   return (
     <div>
@@ -41,7 +41,7 @@ const About = () => {
         <BottomBorder></BottomBorder>
         <DesktopWrapper>
           <DesktopTitle
-            bgColor={{ background: 'linear-gradient(to bottom, white 45%, #926d79 45%)' }}
+            bgColor={{ background: 'linear-gradient(to right, #f8f8f8 25%, #6d9286 25%)' }}
             title={"about"}
             subTitle={"section about me"}
             titleText={"this will be some text me in things that I like"}

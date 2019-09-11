@@ -64,7 +64,14 @@ const DesktopBgImage = styled.div`
   background-size: cover;
 `;
 
+const DesktopImageContainer = styled.div`
+display: grid;
+grid-template-rows: 1;
+grid-template-columns: repeat(3, 33.33%);
+`;
+
 const DesktopImage = styled.div`
+display: grid;
   width: 100%;
   background-color: #cccccc; 
   height: 40vh; 
@@ -141,7 +148,11 @@ export default class ProjectPage extends React.Component {
             asdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkjasdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj
             asdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkjasdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj
           </SectionText>
-            <DesktopImage style={this.props.image}></DesktopImage>
+            <DesktopImageContainer>
+              <DesktopImage style={this.props.image1}></DesktopImage>
+              <DesktopImage style={this.props.image2}></DesktopImage>
+              <DesktopImage style={this.props.image3}></DesktopImage>
+            </DesktopImageContainer>
           </ProjectContainer>
           <VisitSite><Link href={this.props.link} target="_blank"><H5>Visit Site</H5></Link></VisitSite>
         </Desktop>

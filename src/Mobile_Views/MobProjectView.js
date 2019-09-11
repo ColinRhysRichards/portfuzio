@@ -4,11 +4,12 @@ import NavBar from "../Mobile_Components/NavBar";
 import MobFooter from "../Mobile_Components/Footer";
 import MobTitle from "../Mobile_Components/MobTitle";
 import ProjectCard from '../Mobile_Components/ProjectCard';
-import Influencer from '../images/influencer.png';
+import Influencer from '../images/instagramPhone.jpg';
 import Luffy from '../images/monkeyDLuffy.jpg';
 import Html from '../images/html.jpg';
-import Lawyer from '../images/utah-lawyer-homepage-hero-3.jpg';
-import Study from '../images/studyMaterials.jpg';
+import Lawyer from '../images/lawyers.jpg';
+import NBA from '../images/nba.jpg';
+import Study from '../images/studyMaterials.jpg'
 import Project1 from "../Mobile_Views/Project1";
 import Project2 from "../Mobile_Views/Project2";
 import Project3 from "../Mobile_Views/Project3";
@@ -60,37 +61,38 @@ const Project = () => {
             subTitle={"section about me"}
             titleText={"this will be some text me in things that I like"}
             finalText={"final little outro text if I need any"} />
+
+          <ProjectCardContainer>
+            <ProjectCard
+              path={"/project1"}
+              to={"/project1"}
+              component={Project1}
+              className="projectViewProjectCard"
+              bgImage={{ backgroundImage: `url(${Lawyer})` }}
+              projectTitle={'Attorney Site'}
+              projectSubText={'Richards and Richards Lawfirm'}
+            />
+            <ProjectCard
+              path={"/project2"}
+              to={"/project2"}
+              component={Project2}
+              className="projectViewProjectCard"
+              bgImage={{ backgroundImage: `url(${Influencer})` }}
+              projectTitle={'Mobile Application'}
+              projectSubText={'Localfluence'}
+            />
+            <ProjectCard
+              path={"/project3"}
+              to={"/project3"}
+              component={Project3}
+              className="projectViewProjectCard"
+              bgImage={{ backgroundImage: `url(${NBA})` }}
+              projectTitle={'Game'}
+              projectSubText={'React Memory Game'}
+            />
+          </ProjectCardContainer>
+          <Footer />
         </DesktopWrapper>
-        <ProjectCardContainer>
-          <ProjectCard
-            path={"/project1"}
-            to={"/project1"}
-            component={Project1}
-            className="projectViewProjectCard"
-            bgImage={{ backgroundImage: `url(${Lawyer})` }}
-            projectTitle={'Attorney Site'}
-            projectSubText={'Richards and Richards Lawfirm'}
-          />
-          <ProjectCard
-            path={"/project2"}
-            to={"/project2"}
-            component={Project2}
-            className="projectViewProjectCard"
-            bgImage={{ backgroundImage: `url(${Influencer})` }}
-            projectTitle={'Mobile Application'}
-            projectSubText={'Instagram Influencers'}
-          />
-          <ProjectCard
-            path={"/project3"}
-            to={"/project3"}
-            component={Project3}
-            className="projectViewProjectCard"
-            bgImage={{ backgroundImage: `url(${Study})` }}
-            projectTitle={'Online Site'}
-            projectSubText={'The Bookstore'}
-          />
-        </ProjectCardContainer>
-        <Footer />
       </Desktop>
 
       <Mobile>

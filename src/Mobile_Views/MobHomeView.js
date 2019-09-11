@@ -5,10 +5,10 @@ import MobTitle from "../Mobile_Components/MobTitle";
 import DesktopTitle from "../Mobile_Components/DesktopTitle";
 import styled from "styled-components";
 import ProjectCard from "../Mobile_Components/ProjectCard";
-import Lawyer from '../images/utah-lawyer-homepage-hero-3.jpg';
-import Study from '../images/studyMaterials.jpg';
-import Influencer from "../images/influencer.png";
-import Slc from "../images/slc.jpg";
+import Lawyer from '../images/lawyers.jpg';
+import NBA from '../images/nba.jpg';
+import Influencer from "../images/instagramPhone.jpg";
+import Slc from "../images/riogrande.jpg";
 import Project1 from "../Mobile_Views/Project1";
 import Project2 from "../Mobile_Views/Project2";
 import Project3 from "../Mobile_Views/Project3";
@@ -107,7 +107,7 @@ const Home = () => {
               to={"/project3"}
               component={Project3}
               className="projectViewProjectCard"
-              bgImage={{ backgroundImage: `url(${Study})` }}
+              bgImage={{ backgroundImage: `url(${NBA})` }}
               projectTitle={'Online Site'}
               projectSubText={'The Bookstore'}
             />
@@ -150,7 +150,7 @@ const Home = () => {
             to={"/project3"}
             component={Project3}
             className="projectViewProjectCard"
-            bgImage={{ backgroundImage: `url(${Study})` }}
+            bgImage={{ backgroundImage: `url(${NBA})` }}
             projectTitle={'Online Site'}
             projectSubText={'The Bookstore'}
           />
