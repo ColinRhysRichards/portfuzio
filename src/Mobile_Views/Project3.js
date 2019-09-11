@@ -1,29 +1,30 @@
 import React from "react";
-import NavBar from "../Mobile_Components/NavBar";
 import styled from "styled-components";
-
-
-const TestWrapper = styled.div`
-
-height: 100%;
-`;
-
-
+import ProjectPage from "../Mobile_Components/ProjectPage";
+import YellowBasketball from '../images/yellowbasketball.jpg';
+import Localfluence1 from '../images/localfluence_login.PNG';
+import Localfluence2 from '../images/localfluence_offer.PNG';
+import Localfluence3 from '../images/localfluence_offer.PNG';
 
 const Project3 = () => {
   return (
-    <TestWrapper>
-      {/* <div className="homeContainer">
-        <NavBar />
-        <div className="mobHomeBg">
-          <MobTitle title={"I am a Web Developer"} color={"white"} />
-        </div>
+    <ProjectPage
+      bgColor={{ backgroundColor: "#00471B" }}
+      projectTitle={"React Memory Game"}
+      siteDescription={"A memory game that uses React.js"}
+      responsive={"responsive"}
+      responsiveResponse={"this will be a whole paragraph about how the site is responsive or something like that it will work and it will be cool"}
+      technologies={"technologies"}
+      technologiesResponse={"this will be a whole paragraph about how the site is responsive or something like that it will work and it will be cool"}
+      planning={"Planning"}
+      planningResponse={"this will be a whole paragraph about how the site is responsive or something like that it will work and it will be cool"}
+      bgImage={{ backgroundImage: `url(${YellowBasketball})` }}
+      image1={{ backgroundImage: `url(${Localfluence1})` }}
+      image2={{ backgroundImage: `url(${Localfluence2})` }}
+      image3={{ backgroundImage: `url(${Localfluence3})` }}
+      link={"https://lfthx.com/auth"}
+    />
 
-      </div> */}
-      <NavBar />
-      {/* <MobileOpeningCon bgColor={{ background: "linear-gradient(to top, #23212c 50%, white 50%)" }}> */}
-      <h1>Project 3</h1>
-    </TestWrapper>
   );
 };
 

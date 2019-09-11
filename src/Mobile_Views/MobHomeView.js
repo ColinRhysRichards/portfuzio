@@ -9,6 +9,7 @@ import Lawyer from '../images/lawyers.jpg';
 import NBA from '../images/nba.jpg';
 import Influencer from "../images/instagramPhone.jpg";
 import Slc from "../images/riogrande.jpg";
+import WalkerBuilding from "../images/walkerbuilding.jpg";
 import Project1 from "../Mobile_Views/Project1";
 import Project2 from "../Mobile_Views/Project2";
 import Project3 from "../Mobile_Views/Project3";
@@ -19,6 +20,7 @@ import RightBorder from "../Mobile_Components/RightBorder";
 import TopBorder from "../Mobile_Components/TopBorder";
 import FeaturedProjects from "../Mobile_Components/FeaturedProjects";
 import HeroImage from "../Mobile_Components/HeroImage";
+import MainImg from "../images/coding.jpg"
 
 const TestWrapper = styled.div`
 
@@ -74,12 +76,14 @@ const Home = () => {
         <BottomBorder></BottomBorder>
         <DesktopWrapper>
           <DesktopTitle
-            bgColor={{ background: "linear-gradient(to bottom, #f8f8f8 45% , #926d8c 45%)" }}
-            title={"home"}
+            // bgColor={{ background: "linear-gradient(to bottom, #f8f8f8 45% , #926d8c 45%)" }}
+            bgColor={{ backgroundImage: `url(${MainImg})` }}
+            title={"Web Developer"}
             subTitle={"section about me"}
-            titleText={"this will be some text me in things that I like"}
+            titleText={"this will be some text me in things that I likethis will be some text me in things that I likethis will be some text me in things that I like"}
             finalText={"final little outro text if I need any"} />
-          <HeroImage src={Slc}></HeroImage>
+          {/* 
+          <HeroImage src={Slc}></HeroImage> */}
           <FeaturedProjects
             strokeColor={{ webkitTextStrokeColor: "rgb(146, 109, 140)" }}
           />
@@ -118,14 +122,14 @@ const Home = () => {
 
       <Mobile>
         <TestWrapper>
-          <NavBar />
+          <NavBar sectionHeading={"Home"} />
           <MobTitle
             bgColor={{ background: "linear-gradient(to bottom, white 45% , #926d8c 45%)" }}
             title={"home"}
             subTitle={"section about me"}
             titleText={"this will be some text me in things that I like"}
             finalText={"final little outro text if I need any"} />
-          <HeroImage src={Slc}></HeroImage>
+          <HeroImage src={WalkerBuilding}></HeroImage>
           <FeaturedProjects />
           <ProjectCard
             path={"/project1"}

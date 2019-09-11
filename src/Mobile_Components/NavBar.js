@@ -37,6 +37,20 @@ const NavContainer = styled.div`
   background-color: transparent;
  `;
 
+const MainIcon = styled.h3`
+color: black;
+font-size: 1.6rem;
+display: inline-block;
+padding-left: 2rem;
+`;
+
+const SectionHeading = styled.h3`
+color: #dddddd;
+font-size: 1.6rem;
+display: inline-block;
+font-style: italic;
+text-align: center;
+`;
 
 export default class NavBar extends React.Component {
   render() {
@@ -69,8 +83,8 @@ export default class NavBar extends React.Component {
 
         <Mobile>
           <div className="mobNavContainer">
-            <h3 className="mobMainIcon">colin richards</h3>
-            <h3 className="mobSectionHeading">{this.props.sectionHeading}</h3>
+            <MainIcon>colin richards</MainIcon>
+            <SectionHeading>{this.props.sectionHeading}</SectionHeading>
 
             <Popup
               arrow={true}

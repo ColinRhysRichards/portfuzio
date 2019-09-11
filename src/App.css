@@ -38,7 +38,7 @@
 .burger-menu .bar1,
 .bar2,
 .bar3 {
-  height: 4px;
+  height: 3px;
   /* background-color: #b2b2b2; */
   background-color: #23212c;
   margin-top: 4px;
@@ -179,7 +179,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 flex-wrap: nowrap;
 justify-content: flex-start;
 align-items: center;
-padding: 10px;
+/* padding: 10px; */
 }
 
 .mobMainIcon{

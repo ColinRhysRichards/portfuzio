@@ -40,6 +40,9 @@ const Containerframes = keyframes`
 const TitleTextContainer = styled.div`
   height: 100vh;
   padding-left: 20%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
   opacity: 0;
   /* position: relative; */
   /* top: 39%; */
