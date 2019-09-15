@@ -10,6 +10,7 @@ import RightBorder from "../Mobile_Components/RightBorder";
 import TopBorder from "../Mobile_Components/TopBorder";
 import DesktopTitle from "../Mobile_Components/DesktopTitle";
 import Footer from "../Mobile_Components/Footer";
+import Image from "../images/me_sepia.jpg"
 
 const BottomBorder = styled.div`
 height: 4rem;
@@ -42,10 +43,13 @@ const About = () => {
         <DesktopWrapper>
           <DesktopTitle
             bgColor={{ background: 'linear-gradient(to right, #f8f8f8 25%, #6d9286 25%)' }}
-            title={"about"}
-            subTitle={"section about me"}
+            title={"about me"}
+            // subTitle={"section about me"}
             titleText={"this will be some text me in things that I like"}
-            finalText={"final little outro text if I need any"} />
+            finalText={"final little outro text if I need any"}
+            quoteColor={{ color: 'black' }}
+            image={{ backgroundImage: `url(${Image})` }}
+          />
           <Footer />
         </DesktopWrapper>
       </Desktop>

@@ -9,6 +9,7 @@ import LeftBorder from "../Mobile_Components/LeftBorder";
 import RightBorder from "../Mobile_Components/RightBorder";
 import TopBorder from "../Mobile_Components/TopBorder";
 import DesktopTitle from "../Mobile_Components/DesktopTitle";
+import MainImg from "../images/contact.jpg"
 
 const BottomBorder = styled.div`
 height: 4rem;
@@ -41,8 +42,9 @@ const Contact = () => {
         <BottomBorder></BottomBorder>
         <DesktopWrapper>
           <DesktopTitle
-            bgColor={{ background: 'linear-gradient(to bottom, white 45%, #6d9286 45%)' }}
-            title={"contact"}
+            bgColor={{ backgroundImage: `url(${MainImg})` }}
+            titleColor={{ color: '#ff253a' }}
+            title={"get in touch"}
             subTitle={"section about me"}
             titleText={"this will be some text me in things that I like"}
             finalText={"final little outro text if I need any"} />

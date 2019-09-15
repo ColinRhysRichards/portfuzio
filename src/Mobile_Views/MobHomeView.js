@@ -20,7 +20,7 @@ import RightBorder from "../Mobile_Components/RightBorder";
 import TopBorder from "../Mobile_Components/TopBorder";
 import FeaturedProjects from "../Mobile_Components/FeaturedProjects";
 import HeroImage from "../Mobile_Components/HeroImage";
-import MainImg from "../images/coding.jpg"
+import MainImg from "../images/city.jpg"
 
 const TestWrapper = styled.div`
 
@@ -79,13 +79,16 @@ const Home = () => {
             // bgColor={{ background: "linear-gradient(to bottom, #f8f8f8 45% , #926d8c 45%)" }}
             bgColor={{ backgroundImage: `url(${MainImg})` }}
             title={"Web Developer"}
-            subTitle={"section about me"}
-            titleText={"this will be some text me in things that I likethis will be some text me in things that I likethis will be some text me in things that I like"}
-            finalText={"final little outro text if I need any"} />
+            titleColor={{ color: 'white' }}
+            // subTitle={"section about me"}
+            titleText={"Hi, I'm Colin Richards a web developer"}
+          // finalText={"final little outro text if I need any"} 
+
+          />
           {/* 
           <HeroImage src={Slc}></HeroImage> */}
           <FeaturedProjects
-            strokeColor={{ webkitTextStrokeColor: "rgb(146, 109, 140)" }}
+            strokeColor={{ webkitTextStrokeColor: "#ff253a" }}
           />
           <ProjectCardContainer>
             <ProjectCard

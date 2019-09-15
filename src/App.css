@@ -125,7 +125,7 @@
 .dburger-menu.open .dbar1 {
   -webkit-transform: rotate(-45deg) translate(-4px, 4px);
   transform: rotate(-45deg) translate(-4px, 4px);
-  background-color: #ff0000;
+  background-color: #ff253a;
 }
 
 .dburger-menu.open .dbar2 {
@@ -135,7 +135,7 @@
 .dburger-menu.open .dbar3 {
   -webkit-transform: rotate(45deg) translate(-6px, -6px);
   transform: rotate(45deg) translate(-6px, -6px);
-  background-color: #ff0000;
+  background-color: #ff253a;
 }
 
 /* Menu */
@@ -144,7 +144,7 @@
   cursor: pointer;
 }
 .menu li:hover {
-  color: #ff0000;
+  color: #ff253a;
 }
 
 .navigationLink{

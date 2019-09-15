@@ -39,11 +39,16 @@ const Containerframes = keyframes`
 
 const TitleTextContainer = styled.div`
   height: 100vh;
-  padding-left: 20%;
+  /* padding-left: 20%; */
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
   opacity: 0;
+
+  display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(20,5%);
+
   /* position: relative; */
   /* top: 39%; */
   /* background: linear-gradient(to top, #23212c 55%, white 50%); */
@@ -58,10 +63,12 @@ const TitleTextContainer = styled.div`
 `;
 
 const TitleText = styled.h1`
-padding-top: 37vh;
+/* padding-top: 37vh; */
 width: 100%;
 font-size: 10rem;
 opacity: 0;
+grid-row: 8/9;
+grid-column: 2/5;
  
  animation-name: ${Titleframes};
   animation-duration: 1.5s;
@@ -77,6 +84,10 @@ const TitleSubText = styled.h3`
   /* top: 48%; */
   color: red;
   opacity: 0;
+  margin: 0;
+  align-self: end;
+  grid-row: 10/11;
+grid-column: 2/5;
   /* position: relative; */
    
  animation-name: ${Textframes};
@@ -92,6 +103,10 @@ const TitleSubText = styled.h3`
 const TitleQuoteText = styled.h4`
  color: white;
  opacity: 0;
+ grid-row: 11/12;
+grid-column: 2/5;
+margin: 0;
+    align-self: end;
   
  animation-name: ${Textframes};
   animation-duration: 1.5s;
@@ -105,7 +120,9 @@ const TitleQuoteText = styled.h4`
 
 const TitleFinalText = styled.h5`
 opacity: 0;
- 
+grid-row: 12/13;
+grid-column: 2/5; 
+
 animation-name: ${Textframes};
   animation-duration: 1.5s;
   animation-delay: 1.7s;
@@ -114,6 +131,17 @@ animation-name: ${Textframes};
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-play-state: running;
+`;
+
+const TitleTextImage = styled.div`
+grid-row: 4/16;
+    grid-column: 3/6;
+    /* height: 25vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  /* padding-left: 20%; */
+  /* opacity: 0;  */
 `;
 
 
@@ -138,10 +166,11 @@ export default class DesktopTitle extends React.Component {
     return (
 
       <TitleTextContainer style={this.props.bgColor}>
-        <TitleText ref={div => (this.titleTween = div)}>{this.props.title}</TitleText>
+        <TitleText style={this.props.titleColor}>{this.props.title}</TitleText>
         <TitleSubText>{this.props.subTitle}</TitleSubText>
-        <TitleQuoteText>{this.props.titleText}</TitleQuoteText>
+        <TitleQuoteText style={this.props.quoteColor}>{this.props.titleText}</TitleQuoteText>
         <TitleFinalText>{this.props.finalText}</TitleFinalText>
+        <TitleTextImage style={this.props.image}></TitleTextImage>
       </TitleTextContainer>
     );
   }

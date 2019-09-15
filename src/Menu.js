@@ -21,6 +21,17 @@ const Keyframes = keyframes`
 }
 `;
 
+const KeyframesX = keyframes`
+0% {
+  transform: translateX(-2rem)
+;
+}
+100% {
+  transform: translateX(0rem);
+  opacity: 1;
+}
+`;
+
 library.add(fab)
 
 
@@ -61,14 +72,57 @@ const MenuLink = styled.h3`
   align-self: center;
 `;
 
-const DesktopMenuLink = styled.h3`
+const Hover = styled.div`
+  color: red;
+  background-color: blue;
+  text-align: right;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2rem;
+  align-self: center;
+  animation-name: ${Keyframes};
+  animation-duration: 1.5s;
+  animation-delay: .25s;
+  animation-timing-function: 1.5s; 
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+`;
+
+const DesktopMenuLink = styled.div`
   color: black;
   text-align: right;
   margin: 0;
   font-weight: 500;
   font-size: 2rem;
   align-self: center;
-`;
+  transition:all 1s ease;
+  background: white;
+    /* Old browsers */
+    /* background: linear-gradient(to right, blue 50%, white 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+  :hover {
+    background-color: red;
+    color: black;
+  text-align: right;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2rem;
+  align-self: center;
+  background-position:left bottom; */
+
+  /* animation-name: ${KeyframesX};
+  animation-duration: 1.5s;
+  animation-delay: .25s;
+  animation-timing-function: 1.5s; 
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running; */
+  }
+`
 
 const NavLinkContainer = styled.div`
 justify-content: space-between;
@@ -86,6 +140,11 @@ font-size: 1.6rem;
   justify-self: left;
   align-self: center;
   width: 100%
+`;
+
+const EmailLink = styled.a`
+text-decoration: none;
+color: lightgray;
 `;
 
 const Email = styled.h3`
@@ -156,6 +215,16 @@ width: 100%;
 align-self: center;
 text-align: left;
 /* justify-content: space-between; */
+opacity: 0;
+
+ animation-name: ${Keyframes};
+  animation-duration: 1s;
+  animation-delay: .25s;
+  animation-timing-function: 1.5s; 
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 `;
 
 const DesktopContactContainer = styled.div`
@@ -166,6 +235,16 @@ width: 100%;
 align-self: center;
 text-align: left;
 color: lightgray;
+opacity: 0;
+
+ animation-name: ${Keyframes};
+  animation-duration: 1s;
+  animation-delay: .45s;
+  animation-timing-function: 1.5s; 
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 `;
 
 const IconContainer = styled.div`
@@ -257,8 +336,8 @@ export default ({ close }) => (
 
         <DesktopContactContainer>
           <Name>Colin Richards</Name>
-          <Email>colin.rhys.richards@gmail.com</Email>
-          <Address>github</Address>
+          <EmailLink href="mailto:colin.rhys.richards@gmail.com?Subject=Hello%20again" target="_top"><Email>colin.rhys.richards@gmail.com</Email></EmailLink>
+          <Address>Salt Lake City, UT</Address>
         </DesktopContactContainer>
       </DesktopMenu>
     </Desktop>

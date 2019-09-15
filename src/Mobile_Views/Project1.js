@@ -19,9 +19,9 @@ const Project1 = () => {
       projectTitle={"Richards & Richards"}
       siteDescription={"A website for Richards and Richards Law Firm"}
       responsive={"responsive"}
-      responsiveResponse={"this will be a whole paragraph about how the site is responsive or something like that it will work and it will be cool"}
+      responsiveResponse={"This is website is mobile responsive and has been made to be easily interacted with on mobile"}
       technologies={"technologies"}
-      technologiesResponse={"this will be a whole paragraph about how the site is responsive or something like that it will work and it will be cool"}
+      technologiesResponse={"React.js - React-router - Swipeable views - "}
       planning={"Planning"}
       planningResponse={"this will be a whole paragraph about how the site is responsive or something like that it will work and it will be cool"}
       bgImage={{ backgroundImage: `url(${Lawyer})` }}
