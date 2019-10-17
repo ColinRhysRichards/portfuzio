@@ -58,9 +58,9 @@ const Project = () => {
           <DesktopTitle
             bgColor={{ background: 'linear-gradient(to right, #f8f8f8 25%, #8c926d 25%)' }}
             title={"projects"}
-            subTitle={"section about me"}
-            titleText={"this will be some text me in things that I like"}
-            finalText={"final little outro text if I need any"}
+            // subTitle={"section about me"}
+            // titleText={"this will be some text me in things that I like"}
+            // finalText={"final little outro text if I need any"}
             quoteColor={{ color: 'black' }} />
 
           <ProjectCardContainer>
@@ -101,9 +101,11 @@ const Project = () => {
         <MobTitle
           bgColor={{ background: 'linear-gradient(to bottom, white 45%, #8c926d 45%)' }}
           title={"projects"}
-          subTitle={"section about me"}
-          titleText={"this will be some text that describes me in some way or things that I like"}
-          finalText={"final little outro text if I need any"} />
+        // subTitle={"section about me"}
+        // titleText={"this will be some text that describes me in some way or things that I like"}
+        // finalText={"final little outro text if I need any"} 
+
+        />
         <ProjectCard
           path={"/project2"}
           to={"/project2"}

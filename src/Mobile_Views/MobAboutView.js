@@ -135,7 +135,7 @@ const About = () => {
           <TextSection>
             <TextSectionTitle>"coLIn rIcHards"</TextSectionTitle>
             <TextSectionText>
-              <h3>This will be the title of the section</h3>
+              {/* <h3>This will be the title of the section</h3> */}
               <h4>I currently live in Salt Lake City, Utah. I graduated from the University of Utah and also completed a coding bootcamp. I enjoy spending time with family and friends. Living a healthy lifestyle is very important to me, I . I love travelling </h4></TextSectionText>
           </TextSection>
 
@@ -186,7 +186,7 @@ const About = () => {
 
         <MobileTextSection>
           <MobileTag>"coLIn rIcHards"</MobileTag>
-          <h3>This will be the title of the section</h3>
+          {/* <h3>This will be the title of the section</h3> */}
           <h4>I currently live in Salt Lake City, Utah. I graduated from the University of Utah and also completed a coding bootcamp. I enjoy spending time with family and friends. Living a healthy lifestyle is very important to me, I . I love travelling </h4>
         </MobileTextSection>
         <MobFooter />
