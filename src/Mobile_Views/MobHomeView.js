@@ -78,10 +78,10 @@ const Home = () => {
           <DesktopTitle
             // bgColor={{ background: "linear-gradient(to bottom, #f8f8f8 45% , #926d8c 45%)" }}
             bgColor={{ backgroundImage: `url(${MainImg})` }}
-            title={"Web Developer"}
+            title={"Hello, I'm Colin"}
             titleColor={{ color: 'white' }}
             // subTitle={"section about me"}
-            titleText={"Hi, I'm Colin Richards a web developer"}
+            titleText={"I'm Colin Richards a web developer"}
           // finalText={"final little outro text if I need any"} 
 
           />
@@ -92,15 +92,6 @@ const Home = () => {
           />
           <ProjectCardContainer>
             <ProjectCard
-              path={"/project1"}
-              to={"/project1"}
-              component={Project1}
-              className="projectViewProjectCard"
-              bgImage={{ backgroundImage: `url(${Lawyer})` }}
-              projectTitle={'Attorney Site'}
-              projectSubText={'Richards and Richards Lawfirm'}
-            />
-            <ProjectCard
               path={"/project2"}
               to={"/project2"}
               component={Project2}
@@ -108,6 +99,15 @@ const Home = () => {
               bgImage={{ backgroundImage: `url(${Influencer})` }}
               projectTitle={'Mobile Application'}
               projectSubText={'Instagram Influencers'}
+            />
+            <ProjectCard
+              path={"/project1"}
+              to={"/project1"}
+              component={Project1}
+              className="projectViewProjectCard"
+              bgImage={{ backgroundImage: `url(${Lawyer})` }}
+              projectTitle={'Attorney Site'}
+              projectSubText={'Richards and Richards Lawfirm'}
             />
             <ProjectCard
               path={"/project3"}
@@ -127,22 +127,15 @@ const Home = () => {
         <TestWrapper>
           <NavBar sectionHeading={"Home"} />
           <MobTitle
-            bgColor={{ background: "linear-gradient(to bottom, white 45% , #926d8c 45%)" }}
-            title={"home"}
-            subTitle={"section about me"}
-            titleText={"this will be some text me in things that I like"}
-            finalText={"final little outro text if I need any"} />
-          <HeroImage src={WalkerBuilding}></HeroImage>
-          <FeaturedProjects />
-          <ProjectCard
-            path={"/project1"}
-            to={"/project1"}
-            component={Project1}
-            className="projectViewProjectCard"
-            bgImage={{ backgroundImage: `url(${Lawyer})` }}
-            projectTitle={'Attorney Site'}
-            projectSubText={'Richards and Richards Lawfirm'}
+            bgColor={{ backgroundImage: `url(${MainImg})` }}
+            title={"hello,"}
+            titleColor={{ color: 'white' }}
+            // subTitle={"section about me"}
+            titleText={"I'm Colin Richards a web developer"}
+          // finalText={"final little outro text if I need any"}  
           />
+          {/* <HeroImage src={WalkerBuilding}></HeroImage> */}
+          <FeaturedProjects />
           <ProjectCard
             path={"/project2"}
             to={"/project2"}
@@ -151,6 +144,15 @@ const Home = () => {
             bgImage={{ backgroundImage: `url(${Influencer})` }}
             projectTitle={'Mobile Application'}
             projectSubText={'Instagram Influencers'}
+          />
+          <ProjectCard
+            path={"/project1"}
+            to={"/project1"}
+            component={Project1}
+            className="projectViewProjectCard"
+            bgImage={{ backgroundImage: `url(${Lawyer})` }}
+            projectTitle={'Attorney Site'}
+            projectSubText={'Richards and Richards Lawfirm'}
           />
           <ProjectCard
             path={"/project3"}
@@ -162,12 +164,12 @@ const Home = () => {
             projectSubText={'The Bookstore'}
           />
           <SkillSection>
-            <H4>Title of a Section</H4>
-            <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
-            <H4>Title of a Section</H4>
-            <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
-            <H4>Title of a Section</H4>
-            <H5>List of something<br />Apples<br />Bananas<br />Oranges<br />Kiwis</H5>
+            <H4>Front End Development</H4>
+            <H5>HTML<br />CSS<br />Javascript<br />Jquery<br />React</H5>
+            <H4>Back End Development</H4>
+            <H5>MongoDB<br />MySQL<br />Express.js</H5>
+            <H4>Other</H4>
+            <H5>Git Control<br />Trello Boards</H5>
           </SkillSection>
           <Footer />
         </TestWrapper>

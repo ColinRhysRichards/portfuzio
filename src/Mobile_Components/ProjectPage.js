@@ -7,7 +7,7 @@ import Desktop from "./Desktop";
 
 const ProjectContainer = styled.div`
   /* height: 100vh; */
-  background-color: white; /* Used if the image is unavailable */
+  background-color: #f8f8f8; /* Used if the image is unavailable */
   /* padding: 30px; */
   padding: 10%;
 `;
@@ -73,11 +73,11 @@ grid-template-columns: repeat(3, 33.33%);
 const DesktopImage = styled.div`
 display: grid;
   width: 100%;
-  background-color: #cccccc; 
+  background-color: #cccccc00; 
   height: 40vh; 
   background-position: center;
   background-repeat: no-repeat; 
-  background-size: cover;
+  background-size: contain;
   margin-bottom: 5rem;
 `;
 
@@ -92,7 +92,7 @@ const BgImage = styled.div`
 
 const Image = styled.div`
   width: 100%;
-  background-color: #cccccc; 
+  background-color: #cccccc00; 
   height: 25vh; 
   background-position: center;
   background-repeat: no-repeat; 
@@ -105,6 +105,8 @@ background-color: #23212c;
 height: 25vh;
 display: grid;
 grid-template-rows: 10% auto 10%;
+width: 100%;
+z-index: 9999;
 `;
 
 const Link = styled.a`
@@ -130,7 +132,7 @@ export default class ProjectPage extends React.Component {
       <div>
         <Desktop>
           <ProjectContainer style={this.props.bgColor}>
-            <BackButton />
+            {/* <BackButton /> */}
             <DesktopProjectOverview>Project Overview</DesktopProjectOverview>
             <ProjectTitle>{this.props.projectTitle}</ProjectTitle>
             <SiteDescription>{this.props.siteDescription}</SiteDescription>
@@ -143,11 +145,9 @@ export default class ProjectPage extends React.Component {
           </ProjectContainer>
           <DesktopBgImage style={this.props.bgImage}></DesktopBgImage>
           <ProjectContainer>
-            <SectionTitle>This is a Title</SectionTitle>
-            <SectionText>asdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj
-            asdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkjasdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj
-            asdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkjasdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj
-          </SectionText>
+            <SectionTitle>{this.props.sectionTitle}</SectionTitle>
+            <SectionText>{this.props.sectionText}
+            </SectionText>
             <DesktopImageContainer>
               <DesktopImage style={this.props.image1}></DesktopImage>
               <DesktopImage style={this.props.image2}></DesktopImage>
@@ -172,11 +172,9 @@ export default class ProjectPage extends React.Component {
           </ProjectContainer>
           <BgImage style={this.props.bgImage}></BgImage>
           <ProjectContainer>
-            <SectionTitle>This is a Title</SectionTitle>
-            <SectionText>asdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj
-            asdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkjasdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj
-            asdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkjasdf ;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj asdf;lkj
-          </SectionText>
+            <SectionTitle>{this.props.sectionTitle}</SectionTitle>
+            <SectionText>{this.props.sectionText}
+            </SectionText>
             <Image style={this.props.image}></Image>
           </ProjectContainer>
           <VisitSite><Link href={this.props.link} target="_blank"><H5>Visit Site</H5></Link></VisitSite>

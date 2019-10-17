@@ -4,20 +4,29 @@ import Project from "../Mobile_Views/MobProjectView";
 import styled from "styled-components";
 
 const BackBtnStyle = styled.h1`
-    text-align: right;
-    font-size: 3rem;
+    /* text-align: right; */
+    font-size: 3.5rem;
     font-family: Nunito;
-    color: #dddddd;
+    color: #ff253a;
     font-style: normal;
     font-weight: 500;
-    position: fixed;
-    right: 7%;
+    height: auto;
+    width: 100%;
+    text-decoration: none;
+    text-align: right;
+    /* position: fixed;
+    right: 7%; */
 
 `;
 
+const navLink = {
+  textDecoration: "none",
+  color: "#ff253a"
+};
+
 const BackButton = () => {
   return (
-    <NavLink path={"/project"} to={"/project"} component={Project}><BackBtnStyle>X</BackBtnStyle></NavLink>
+    <NavLink style={navLink} path={"/project"} to={"/project"} component={Project}><BackBtnStyle>X</BackBtnStyle></NavLink>
   );
 };
 

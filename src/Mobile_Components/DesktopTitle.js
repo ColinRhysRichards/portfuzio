@@ -103,8 +103,10 @@ grid-column: 2/5;
 const TitleQuoteText = styled.h4`
  color: white;
  opacity: 0;
- grid-row: 11/12;
-grid-column: 2/5;
+ /* padding-top: 1rem; */
+ padding-right: 3rem;
+ grid-row: 9/13;
+grid-column: 2/4;
 margin: 0;
     align-self: end;
   
@@ -144,6 +146,32 @@ grid-row: 4/16;
   /* opacity: 0;  */
 `;
 
+const Email = styled.a`
+    grid-row: 11/12;
+    grid-column: 2/3;
+ width: 100%;
+ cursor: pointer;
+ display: block;
+ text-decoration: none;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    font-weight: 900;
+    margin-bottom: 0px;
+    text-transform: none;
+    font-family: "Gilroy", sans-serif;
+    margin-bottom: 2px;
+    opacity: 0;
+     
+    animation-name: ${Textframes};
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-timing-function: 1.5s; 
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+`;
+
 
 export default class DesktopTitle extends React.Component {
   constructor(props) {
@@ -167,6 +195,7 @@ export default class DesktopTitle extends React.Component {
 
       <TitleTextContainer style={this.props.bgColor}>
         <TitleText style={this.props.titleColor}>{this.props.title}</TitleText>
+        <Email href={this.props.emailLink} target="_top" style={this.props.emailColor}>{this.props.emailTitle}</Email>
         <TitleSubText>{this.props.subTitle}</TitleSubText>
         <TitleQuoteText style={this.props.quoteColor}>{this.props.titleText}</TitleQuoteText>
         <TitleFinalText>{this.props.finalText}</TitleFinalText>

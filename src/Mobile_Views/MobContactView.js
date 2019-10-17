@@ -44,10 +44,12 @@ const Contact = () => {
           <DesktopTitle
             bgColor={{ backgroundImage: `url(${MainImg})` }}
             titleColor={{ color: '#ff253a' }}
+            emailColor={{ color: 'white' }}
             title={"get in touch"}
-            subTitle={"section about me"}
-            titleText={"this will be some text me in things that I like"}
-            finalText={"final little outro text if I need any"} />
+            // subTitle={"section about me"}
+            emailTitle={"colin.rhys.richards@gmail.com"}
+            emailLink={"mailto:colin.rhys.richards@gmail.com?Subject=Hello%20again"}
+          />
           <Footer />
         </DesktopWrapper>
       </Desktop>
@@ -55,11 +57,15 @@ const Contact = () => {
       <Mobile>
         <NavBar sectionHeading={"Contact"} />
         <MobTitle
-          bgColor={{ background: 'linear-gradient(to bottom, white 45%, #6d9286 45%)' }}
+          bgColor={{ backgroundImage: `url(${MainImg})` }}
+          titleColor={{ color: '#ff253a' }}
+          emailColor={{ color: 'white' }}
           title={"contact"}
-          subTitle={"section about me"}
-          titleText={"this will be some text that describes me in some way or things that I like"}
-          finalText={"final little outro text if I need any"} />
+          // subTitle={"section about me"}
+          emailTitle={"colin.rhys.richards@gmail.com"}
+          emailLink={"mailto:colin.rhys.richards@gmail.com?Subject=Hello%20again"}
+        // finalText={"final little outro text if I need any"}   
+        />
         <Footer />
       </Mobile>
     </div>

@@ -56,22 +56,14 @@ const Project = () => {
         <BottomBorder></BottomBorder>
         <DesktopWrapper>
           <DesktopTitle
-            bgColor={{ background: 'linear-gradient(to bottom, white 45%, #8c926d 45%)' }}
+            bgColor={{ background: 'linear-gradient(to right, #f8f8f8 25%, #8c926d 25%)' }}
             title={"projects"}
             subTitle={"section about me"}
             titleText={"this will be some text me in things that I like"}
-            finalText={"final little outro text if I need any"} />
+            finalText={"final little outro text if I need any"}
+            quoteColor={{ color: 'black' }} />
 
           <ProjectCardContainer>
-            <ProjectCard
-              path={"/project1"}
-              to={"/project1"}
-              component={Project1}
-              className="projectViewProjectCard"
-              bgImage={{ backgroundImage: `url(${Lawyer})` }}
-              projectTitle={'Attorney Site'}
-              projectSubText={'Richards and Richards Lawfirm'}
-            />
             <ProjectCard
               path={"/project2"}
               to={"/project2"}
@@ -80,6 +72,15 @@ const Project = () => {
               bgImage={{ backgroundImage: `url(${Influencer})` }}
               projectTitle={'Mobile Application'}
               projectSubText={'Localfluence'}
+            />
+            <ProjectCard
+              path={"/project1"}
+              to={"/project1"}
+              component={Project1}
+              className="projectViewProjectCard"
+              bgImage={{ backgroundImage: `url(${Lawyer})` }}
+              projectTitle={'Attorney Site'}
+              projectSubText={'Richards and Richards Lawfirm'}
             />
             <ProjectCard
               path={"/project3"}
@@ -104,33 +105,6 @@ const Project = () => {
           titleText={"this will be some text that describes me in some way or things that I like"}
           finalText={"final little outro text if I need any"} />
         <ProjectCard
-          path={"/project1"}
-          to={"/project1"}
-          component={Project1}
-          className="projectViewProjectCard"
-          bgImage={{ backgroundImage: `url(${Lawyer})` }}
-          projectTitle={'Attorney Site'}
-          projectSubText={'Richards and Richards Lawfirm'}
-        />
-        <ProjectCard
-          path={"/project2"}
-          to={"/project2"}
-          component={Project2}
-          className="projectViewProjectCard"
-          bgImage={{ backgroundImage: `url(${Luffy})` }}
-          projectTitle={'Application'}
-          projectSubText={'Pirate King'}
-        />
-        <ProjectCard
-          path={"/project3"}
-          to={"/project3"}
-          component={Project3}
-          className="projectViewProjectCard"
-          bgImage={{ backgroundImage: `url(${Html})` }}
-          projectTitle={'Game'}
-          projectSubText={'Game using HTML'}
-        />
-        <ProjectCard
           path={"/project2"}
           to={"/project2"}
           component={Project2}
@@ -140,6 +114,42 @@ const Project = () => {
           projectSubText={'Instagram Influencers'}
         />
         <ProjectCard
+          path={"/project1"}
+          to={"/project1"}
+          component={Project1}
+          className="projectViewProjectCard"
+          bgImage={{ backgroundImage: `url(${Lawyer})` }}
+          projectTitle={'Attorney Site'}
+          projectSubText={'Richards and Richards Lawfirm'}
+        />
+        {/* <ProjectCard
+          path={"/project2"}
+          to={"/project2"}
+          component={Project2}
+          className="projectViewProjectCard"
+          bgImage={{ backgroundImage: `url(${Luffy})` }}
+          projectTitle={'Application'}
+          projectSubText={'Pirate King'}
+        /> */}
+        {/* <ProjectCard
+          path={"/project3"}
+          to={"/project3"}
+          component={Project3}
+          className="projectViewProjectCard"
+          bgImage={{ backgroundImage: `url(${Html})` }}
+          projectTitle={'Game'}
+          projectSubText={'Game using HTML'}
+        /> */}
+        <ProjectCard
+          path={"/project3"}
+          to={"/project3"}
+          component={Project3}
+          className="projectViewProjectCard"
+          bgImage={{ backgroundImage: `url(${NBA})` }}
+          projectTitle={'Game'}
+          projectSubText={'React Memory Game'}
+        />
+        {/* <ProjectCard
           path={"/project3"}
           to={"/project3"}
           component={Project3}
@@ -147,7 +157,7 @@ const Project = () => {
           bgImage={{ backgroundImage: `url(${Study})` }}
           projectTitle={'Online Site'}
           projectSubText={'The Bookstore'}
-        />
+        /> */}
         <MobFooter />
       </Mobile>
     </div>
