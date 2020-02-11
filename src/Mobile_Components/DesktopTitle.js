@@ -192,7 +192,6 @@ export default class DesktopTitle extends React.Component {
 
   render() {
     return (
-
       <TitleTextContainer style={this.props.bgColor}>
         <TitleText style={this.props.titleColor}>{this.props.title}</TitleText>
         <Email href={this.props.emailLink} target="_top" style={this.props.emailColor}>{this.props.emailTitle}</Email>

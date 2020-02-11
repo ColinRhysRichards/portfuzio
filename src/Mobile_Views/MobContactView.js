@@ -47,8 +47,8 @@ const Contact = () => {
             emailColor={{ color: 'white' }}
             title={"get in touch"}
             // subTitle={"section about me"}
-            emailTitle={"colin.rhys.richards@gmail.com"}
-            emailLink={"mailto:colin.rhys.richards@gmail.com?Subject=Hello%20again"}
+            emailTitle={"26richco@gmail.com"}
+            emailLink={"mailto:26richco@gmail.com?Subject=Hello%20again"}
           />
           <Footer />
         </DesktopWrapper>
@@ -62,8 +62,8 @@ const Contact = () => {
           emailColor={{ color: 'white' }}
           title={"contact"}
           // subTitle={"section about me"}
-          emailTitle={"colin.rhys.richards@gmail.com"}
-          emailLink={"mailto:colin.rhys.richards@gmail.com?Subject=Hello%20again"}
+          emailTitle={"26richco@gmail.com"}
+          emailLink={"mailto:26richco@gmail.com?Subject=Hello%20again"}
         // finalText={"final little outro text if I need any"}   
         />
         <Footer />

@@ -336,7 +336,7 @@ export default ({ close }) => (
 
         <DesktopContactContainer>
           <Name>Colin Richards</Name>
-          <EmailLink href="mailto:colin.rhys.richards@gmail.com?Subject=Hello%20again" target="_top"><Email>colin.rhys.richards@gmail.com</Email></EmailLink>
+          <EmailLink href="mailto:26richoco@gmail.com?Subject=Hello%20again" target="_top"><Email>26richco@gmail.com</Email></EmailLink>
           <Address>Salt Lake City, UT</Address>
         </DesktopContactContainer>
       </DesktopMenu>

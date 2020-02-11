@@ -134,7 +134,7 @@ export default class Footer extends React.Component {
           <DesktopWrapper>
             <DesktopThankyou>Thank you for viewing</DesktopThankyou>
             <DesktopName>Colin Richards</DesktopName>
-            <DesktopEmail>colin.rhys.richards@gmail.com</DesktopEmail>
+            <DesktopEmail>26richco@gmail.com</DesktopEmail>
             <DesktopAddress>Salt Lake City, UT</DesktopAddress>
           </DesktopWrapper>
         </Desktop>
@@ -142,11 +142,11 @@ export default class Footer extends React.Component {
         <Mobile>
           <Wrapper>
             <Name>Colin Richards</Name>
-            <Email>colin.rhys.richards@gmail.com</Email>
+            <Email>26richco@gmail.com</Email>
             <Address>Salt Lake City, UT</Address>
             <IconContainer>
               <A href="https://github.com/ColinRhysRichards" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} style={mobileIcons} /></A>
-              <A href="mailto:colin.rhys.richards@gmail.com?Subject=Hello%20again" target="_top"><FontAwesomeIcon icon={['fab', 'google']} style={mobileIcons} /></A>
+              <A href="mailto:26richoco@gmail.com?Subject=Hello%20again" target="_top"><FontAwesomeIcon icon={['fab', 'google']} style={mobileIcons} /></A>
               <A href="https://www.linkedin.com/in/colin-richards-b5814b161/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} style={mobileIcons} /></A>
             </IconContainer>
           </Wrapper>
