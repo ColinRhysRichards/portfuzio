@@ -1,18 +1,18 @@
 // DEPENDENCIES
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import styled from "styled-components";
-import Mobile from "./Mobile_Components/Mobile";
-import Desktop from "./Mobile_Components/Desktop";
+// import styled from "styled-components";
+// import Mobile from "./Mobile_Components/Mobile";
+// import Desktop from "./Mobile_Components/Desktop";
 
 // MOBILE CONTAINERS
-import Home from "./Mobile_Views/MobHomeView";
-import Project from "./Mobile_Views/MobProjectView";
-import About from "./Mobile_Views/MobAboutView";
-import Contact from "./Mobile_Views/MobContactView";
-import Project1 from "./Mobile_Views/Project1";
-import Project2 from "./Mobile_Views/Project2";
-import Project3 from "./Mobile_Views/Project3";
+import Home from "./Containers/MobHomeView";
+import Project from "./Containers/MobProjectView";
+import About from "./Containers/MobAboutView";
+import Contact from "./Containers/MobContactView";
+import Project1 from "./Containers/Project1";
+import Project2 from "./Containers/Project2";
+import Project3 from "./Containers/Project3";
 
 
 // TABLET CONTAINERS
@@ -23,13 +23,13 @@ import Project3 from "./Mobile_Views/Project3";
 import GlobalStyle from "./GlobalStyles";
 import "./App.css";
 
-const MobileContainer = styled.div`
-  height: 100vh;
-  width: 100vw;
-  /* overflow: hidden; */
-  margin: none;
-  /* background-color: green; */
-`;
+// const MobileContainer = styled.div`
+//   height: 100vh;
+//   width: 100vw;
+//   /* overflow: hidden; */
+//   margin: none;
+//   /* background-color: green; */
+// `;
 
 export default class App extends Component {
   constructor(props) {

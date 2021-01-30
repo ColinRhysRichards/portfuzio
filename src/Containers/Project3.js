@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import ProjectPage from "../Mobile_Components/ProjectPage";
-import Mobile from "../Mobile_Components/Mobile";
-import Desktop from "../Mobile_Components/Desktop";
-import TopBorder from "../Mobile_Components/TopBorder";
-import LeftBorderBackBtn from "../Mobile_Components/LeftBorderBackBtn";
-import RightBorder from "../Mobile_Components/RightBorder";
+import ProjectPage from "../Components/ProjectPage";
+import Mobile from "../Components/Mobile";
+import Desktop from "../Components/Desktop";
+import TopBorder from "../Components/TopBorder";
+import LeftBorderBackBtn from "../Components/LeftBorderBackBtn";
+import RightBorder from "../Components/RightBorder";
 import YellowBasketball from '../images/yellowbasketball.jpg';
-import Localfluence1 from '../images/localfluence_login.PNG';
-import Localfluence2 from '../images/localfluence_offer.PNG';
-import Localfluence3 from '../images/localfluence_offer.PNG';
+// import Localfluence1 from '../images/localfluence_login.PNG';
+// import Localfluence2 from '../images/localfluence_offer.PNG';
+// import Localfluence3 from '../images/localfluence_offer.PNG';
 import Jazz from "../images/jazzGame.JPG"
 import Court from "../images/court.jpg"
 import Hoop from "../images/hoop.jpg"

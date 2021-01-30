@@ -1,22 +1,22 @@
 import React from "react";
-import NavBar from "../Mobile_Components/NavBar";
+// import NavBar from "../Components/NavBar";
 import styled from "styled-components";
-import ProjectPage from "../Mobile_Components/ProjectPage";
+import ProjectPage from "../Components/ProjectPage";
 import Lawyer from '../images/utah-lawyer-homepage-hero-3.jpg';
 import Study from '../images/studyMaterials.jpg';
-import Mobile from "../Mobile_Components/Mobile";
-import Desktop from "../Mobile_Components/Desktop";
-import TopBorder from "../Mobile_Components/TopBorder";
-import LeftBorderBackBtn from "../Mobile_Components/LeftBorderBackBtn";
-import RightBorder from "../Mobile_Components/RightBorder";
+import Mobile from "../Components/Mobile";
+import Desktop from "../Components/Desktop";
+import TopBorder from "../Components/TopBorder";
+import LeftBorderBackBtn from "../Components/LeftBorderBackBtn";
+import RightBorder from "../Components/RightBorder";
 import RBR from "../images/rbrMobile.JPG";
 import Spiral from "../images/spiral.jpg";
 import Red from "../images/redMountain.jpg";
 ;
-const TestWrapper = styled.div`
+// const TestWrapper = styled.div`
 
-height: 100%;
-`;
+// height: 100%;
+// `;
 
 const BottomBorder = styled.div`
 height: 4rem;

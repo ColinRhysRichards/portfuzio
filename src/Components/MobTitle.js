@@ -1,8 +1,8 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { TimelineLite, CSSPlugin, Power4 } from "gsap/all";
+// import { TimelineLite, CSSPlugin, Power4 } from "gsap/all";
 
-const C = CSSPlugin;
+// const C = CSSPlugin;
 
 
 const Titleframes = keyframes`

@@ -17,7 +17,7 @@ const showLoader = () => loader.classList.remove('loader--hide');
 const hideLoader = () => loader.classList.add('loader--hide');
 
 const Load = ({ hideLoader }) => {
-  useEffect(() => hideLoader(), []);
+  useEffect(() => hideLoader());
   return (
     <BrowserRouter>
       <App />

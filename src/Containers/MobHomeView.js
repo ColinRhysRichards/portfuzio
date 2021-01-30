@@ -1,25 +1,25 @@
 import React from "react";
-import NavBar from "../Mobile_Components/NavBar";
-import Footer from "../Mobile_Components/Footer";
-import MobTitle from "../Mobile_Components/MobTitle";
-import DesktopTitle from "../Mobile_Components/DesktopTitle";
+import NavBar from "../Components/NavBar";
+import Footer from "../Components/Footer";
+import MobTitle from "../Components/MobTitle";
+import DesktopTitle from "../Components/DesktopTitle";
 import styled from "styled-components";
-import ProjectCard from "../Mobile_Components/ProjectCard";
+import ProjectCard from "../Components/ProjectCard";
 import Lawyer from '../images/lawyers.jpg';
 import NBA from '../images/nba.jpg';
 import Influencer from "../images/instagramPhone.jpg";
-import Slc from "../images/riogrande.jpg";
-import WalkerBuilding from "../images/walkerbuilding.jpg";
-import Project1 from "../Mobile_Views/Project1";
-import Project2 from "../Mobile_Views/Project2";
-import Project3 from "../Mobile_Views/Project3";
-import Mobile from "../Mobile_Components/Mobile";
-import Desktop from "../Mobile_Components/Desktop";
-import LeftBorder from "../Mobile_Components/LeftBorder";
-import RightBorder from "../Mobile_Components/RightBorder";
-import TopBorder from "../Mobile_Components/TopBorder";
-import FeaturedProjects from "../Mobile_Components/FeaturedProjects";
-import HeroImage from "../Mobile_Components/HeroImage";
+// import Slc from "../images/riogrande.jpg";
+// import WalkerBuilding from "../images/walkerbuilding.jpg";
+import Project1 from "../Containers/Project1";
+import Project2 from "../Containers/Project2";
+import Project3 from "../Containers/Project3";
+import Mobile from "../Components/Mobile";
+import Desktop from "../Components/Desktop";
+import LeftBorder from "../Components/LeftBorder";
+import RightBorder from "../Components/RightBorder";
+import TopBorder from "../Components/TopBorder";
+import FeaturedProjects from "../Components/FeaturedProjects";
+// import HeroImage from "../Components/HeroImage";
 import MainImg from "../images/city.jpg"
 
 const TestWrapper = styled.div`

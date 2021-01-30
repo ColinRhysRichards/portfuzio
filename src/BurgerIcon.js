@@ -1,6 +1,6 @@
 import React from "react";
-import Mobile from "./Mobile_Components/Mobile";
-import Desktop from "./Mobile_Components/Desktop";
+import Mobile from "./Components/Mobile";
+import Desktop from "./Components/Desktop";
 
 
 

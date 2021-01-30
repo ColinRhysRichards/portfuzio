@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-    font-family: 'Helvetica Neue', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
+    font-family: 'Helvetica Neue', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body.fontLoaded {

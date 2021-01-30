@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import Mobile from "./Mobile_Components/Mobile";
-import Desktop from "./Mobile_Components/Desktop";
+import Mobile from "./Components/Mobile";
+import Desktop from "./Components/Desktop";
 import styled, { keyframes } from "styled-components";
 
 
@@ -55,13 +55,13 @@ const DesktopMenu = styled.div`
   background-color: white;
 `;
 
-const Ul = styled.ul`
-  position: relative;
-  top: 0px;
-  /* font-size: 24px; */
-  padding: 0px;
-  width: 100%;
-`;
+// const Ul = styled.ul`
+//   position: relative;
+//   top: 0px;
+//   /* font-size: 24px; */
+//   padding: 0px;
+//   width: 100%;
+// `;
 
 const MenuLink = styled.h3`
   color: white;
@@ -72,23 +72,23 @@ const MenuLink = styled.h3`
   align-self: center;
 `;
 
-const Hover = styled.div`
-  color: red;
-  background-color: blue;
-  text-align: right;
-  margin: 0;
-  font-weight: 500;
-  font-size: 2rem;
-  align-self: center;
-  animation-name: ${Keyframes};
-  animation-duration: 1.5s;
-  animation-delay: .25s;
-  animation-timing-function: 1.5s; 
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-`;
+// const Hover = styled.div`
+//   color: red;
+//   background-color: blue;
+//   text-align: right;
+//   margin: 0;
+//   font-weight: 500;
+//   font-size: 2rem;
+//   align-self: center;
+//   animation-name: ${Keyframes};
+//   animation-duration: 1.5s;
+//   animation-delay: .25s;
+//   animation-timing-function: 1.5s; 
+//   animation-iteration-count: 1;
+//   animation-direction: normal;
+//   animation-fill-mode: forwards;
+//   animation-play-state: running;
+// `;
 
 const DesktopMenuLink = styled.div`
   color: black;
@@ -124,15 +124,15 @@ const DesktopMenuLink = styled.div`
   }
 `
 
-const NavLinkContainer = styled.div`
-justify-content: space-between;
-display: flex;
-grid-column: 2 / 3;
-grid-row: 2 / 3;
-align-self: center;
-text-align: left;
-width: 100%;
-`;
+// const NavLinkContainer = styled.div`
+// justify-content: space-between;
+// display: flex;
+// grid-column: 2 / 3;
+// grid-row: 2 / 3;
+// align-self: center;
+// text-align: left;
+// width: 100%;
+// `;
 
 const Name = styled.h3`
 font-weight: 500;

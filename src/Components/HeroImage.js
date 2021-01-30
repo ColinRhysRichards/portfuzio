@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Mobile from "../Mobile_Components/Mobile";
 import Desktop from "../Mobile_Components/Desktop";
-import Slc from "../images/slc.jpg"
 
 const HomeHeroImg = styled.img`
     width: 100%;

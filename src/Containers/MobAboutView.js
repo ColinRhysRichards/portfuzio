@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import NavBar from "../Mobile_Components/NavBar";
-import MobFooter from "../Mobile_Components/Footer";
-import MobTitle from "../Mobile_Components/MobTitle";
-import Mobile from "../Mobile_Components/Mobile";
-import Desktop from "../Mobile_Components/Desktop";
-import LeftBorder from "../Mobile_Components/LeftBorder";
-import RightBorder from "../Mobile_Components/RightBorder";
-import TopBorder from "../Mobile_Components/TopBorder";
-import DesktopTitle from "../Mobile_Components/DesktopTitle";
-import Footer from "../Mobile_Components/Footer";
+import NavBar from "../Components/NavBar";
+import MobFooter from "../Components/Footer";
+import MobTitle from "../Components/MobTitle";
+import Mobile from "../Components/Mobile";
+import Desktop from "../Components/Desktop";
+import LeftBorder from "../Components/LeftBorder";
+import RightBorder from "../Components/RightBorder";
+import TopBorder from "../Components/TopBorder";
+import DesktopTitle from "../Components/DesktopTitle";
+import Footer from "../Components/Footer";
 import Image from "../images/me_sepia.jpg"
-import Neon from "../images/neon.jpg"
+// import Neon from "../images/neon.jpg"
 import PinkNeon from "../images/pinkNeon.jpg"
 import Rio from "../images/riogrande.jpg"
 import Me from "../images/meRed.jpg";
@@ -67,11 +67,11 @@ grid-row: 3/4;
 grid-column: 4/5;
 `;
 
-const SkillSection = styled.div`
-background-color: #23212c;
-height: 100%;
-padding: 2rem;
-`;
+// const SkillSection = styled.div`
+// background-color: #23212c;
+// height: 100%;
+// padding: 2rem;
+// `;
 
 const ImageTile = styled.div`
  background-position: center;
@@ -88,23 +88,23 @@ grid-template-columns: 27% 25% 25% 23%;
 grid-template-rows: repeat(1,100%);
 `;
 
-const DesktopSkillSection = styled.div`
-background-color: #23212c;
-height: 100vh;
-/* padding: 2rem; */
-display: grid;
-    grid-template-columns: repeat(5,20%);
-    grid-template-rows: repeat(20,5%);
-`;
+// const DesktopSkillSection = styled.div`
+// background-color: #23212c;
+// height: 100vh;
+// /* padding: 2rem; */
+// display: grid;
+//     grid-template-columns: repeat(5,20%);
+//     grid-template-rows: repeat(20,5%);
+// `;
 
-const H4 = styled.h4`
-color: white;
-`;
+// const H4 = styled.h4`
+// color: white;
+// `;
 
-const H5 = styled.h5`
-font-size: 1.2rem;
-color: #4b3c62;
-`;
+// const H5 = styled.h5`
+// font-size: 1.2rem;
+// color: #4b3c62;
+// `;
 
 const MobileTextSection = styled.div`
 background-color: #f8f8f8;

@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Popup from "reactjs-popup";
+// import Popup from "reactjs-popup";
 import { NavLink } from "react-router-dom";
-import Mobile from "../Mobile_Components/Mobile";
-import Desktop from "../Mobile_Components/Desktop";
+import Mobile from "../Components/Mobile";
+import Desktop from "../Components/Desktop";
 
 
 const ProjectTile = styled.div`

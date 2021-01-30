@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Project from "../Mobile_Views/MobProjectView";
-import BackButton from "../Mobile_Components/BackButton";
+// import Project from "../Mobile_Views/MobProjectView";
+import BackButton from "../Components/BackButton";
 import Mobile from "./Mobile";
 import Desktop from "./Desktop";
 
@@ -12,9 +12,9 @@ const ProjectContainer = styled.div`
   padding: 10%;
 `;
 
-const DesktopContainer = styled.div`
-margin-left: 20%;
-`;
+// const DesktopContainer = styled.div`
+// margin-left: 20%;
+// `;
 
 const DesktopProjectOverview = styled.h5`
 margin-top: none;

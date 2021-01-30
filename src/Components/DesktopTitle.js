@@ -39,7 +39,6 @@ const Containerframes = keyframes`
 
 const TitleTextContainer = styled.div`
   height: 100vh;
-  /* padding-left: 20%; */
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
@@ -48,10 +47,6 @@ const TitleTextContainer = styled.div`
   display: grid;
     grid-template-columns: repeat(5,20%);
     grid-template-rows: repeat(20,5%);
-
-  /* position: relative; */
-  /* top: 39%; */
-  /* background: linear-gradient(to top, #23212c 55%, white 50%); */
   animation-name: ${Containerframes};
   animation-duration: 1s;
   animation-delay: .25s;
@@ -63,7 +58,6 @@ const TitleTextContainer = styled.div`
 `;
 
 const TitleText = styled.h1`
-/* padding-top: 37vh; */
 width: 100%;
 font-size: 10rem;
 opacity: 0;
@@ -81,14 +75,13 @@ grid-column: 2/5;
 `;
 
 const TitleSubText = styled.h3`
-  /* top: 48%; */
   color: red;
   opacity: 0;
   margin: 0;
   align-self: end;
   grid-row: 10/11;
 grid-column: 2/5;
-  /* position: relative; */
+
    
  animation-name: ${Textframes};
   animation-duration: 1.5s;
@@ -174,21 +167,6 @@ const Email = styled.a`
 
 
 export default class DesktopTitle extends React.Component {
-  constructor(props) {
-    super(props);
-    // this.testTl = new TimelineLite({
-    //   paused: true
-    // })
-    //   ;
-    // this.titleTween = React.createRef();
-  }
-
-  // componentDidMount() {
-  //   this.testTl
-  //     .from(this.titleTween, 2, { x: -50, autoAlpha: 0, ease: Power4.easeOut }, .25)
-
-  //     .play();
-  // }
 
   render() {
     return (
@@ -203,3 +181,4 @@ export default class DesktopTitle extends React.Component {
     );
   }
 }
+

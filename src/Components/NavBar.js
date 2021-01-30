@@ -5,10 +5,10 @@ import styled from "styled-components";
 import Mobile from "./Mobile";
 import Desktop from "./Desktop";
 
-import Home from "../Mobile_Views/MobHomeView";
-import Project from "../Mobile_Views/MobProjectView";
-import About from "../Mobile_Views/MobAboutView";
-import Contact from "../Mobile_Views/MobContactView";
+import Home from "../Containers/MobHomeView";
+import Project from "../Containers/MobProjectView";
+import About from "../Containers/MobAboutView";
+import Contact from "../Containers/MobContactView";
 import BurgerIcon from "../BurgerIcon";
 import Menu from "../Menu";
 

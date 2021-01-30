@@ -1,10 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Project from "../Mobile_Views/MobProjectView";
+import Project from "../Containers/MobProjectView";
 import styled from "styled-components";
 
 const BackBtnStyle = styled.h1`
-    /* text-align: right; */
     font-size: 3.5rem;
     font-family: Nunito;
     color: #ff253a;
@@ -14,9 +13,6 @@ const BackBtnStyle = styled.h1`
     width: 100%;
     text-decoration: none;
     text-align: right;
-    /* position: fixed;
-    right: 7%; */
-
 `;
 
 const navLink = {

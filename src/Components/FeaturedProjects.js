@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Mobile from "../Mobile_Components/Mobile";
-import Desktop from "../Mobile_Components/Desktop";
+import Mobile from "../Components/Mobile";
+import Desktop from "../Components/Desktop";
 
 const Wrapper = styled.div`
 display: grid; 
