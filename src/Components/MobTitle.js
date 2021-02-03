@@ -54,9 +54,6 @@ const TitleTextContainer = styled.div`
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-play-state: running;
-  /* position: relative; */
-  /* top: 39%; */
-  /* background: linear-gradient(to top, #23212c 55%, white 50%); */
 `;
 
 const TitleText = styled.h1`
