@@ -92,7 +92,7 @@ p{
 }
 
 body.modal-open {
-    overflow: visible;
+    overflow: hidden;
 }
 
 `;

@@ -20,7 +20,7 @@ import RightBorder from "../Components/RightBorder";
 import TopBorder from "../Components/TopBorder";
 import FeaturedProjects from "../Components/FeaturedProjects";
 // import HeroImage from "../Components/HeroImage";
-import MainImg from "../images/city.jpg"
+import MainImg from "../images/city.jpg";
 
 const TestWrapper = styled.div`
 

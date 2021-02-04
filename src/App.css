@@ -238,7 +238,7 @@
 
 .popupClass{
   max-height: 0;
-  overflow: hidden; /* Like this your content will not be visible until the height is high enough */
+  overflow: visible; /* Like this your content will not be visible until the height is high enough */
   transition: max-height ease .5s; /* Animation */
 }
 

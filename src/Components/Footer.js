@@ -55,7 +55,7 @@ display: grid;
 grid-template-columns: repeat(5, 20%);
 grid-template-rows: repeat(3, 33.333%);
 background-color: white;
-padding: 5rem 2rem 2rem 2rem;
+padding: 5rem 2rem 5rem 2rem;
 margin-bottom: 2rem; 
 `;
 

@@ -10,11 +10,11 @@ import RightBorder from "../Components/RightBorder";
 import TopBorder from "../Components/TopBorder";
 import DesktopTitle from "../Components/DesktopTitle";
 import Footer from "../Components/Footer";
-import Image from "../images/me_sepia.jpg"
+import Image from "../images/me_in_miami.jpg"
 // import Neon from "../images/neon.jpg"
-import PinkNeon from "../images/pinkNeon.jpg"
+import Mph from "../images/15mph.jpg"
 import Rio from "../images/riogrande.jpg"
-import Me from "../images/meRed.jpg";
+import Me from "../images/me_victor.jpg";
 
 const BottomBorder = styled.div`
 height: 4rem;
@@ -141,7 +141,7 @@ const About = () => {
 
           <ThreePicturesDiv>
             <ImageTile style={{ backgroundImage: `url(${Me})` }}></ImageTile>
-            <ImageTile style={{ backgroundImage: `url(${PinkNeon})` }}></ImageTile>
+            <ImageTile style={{ backgroundImage: `url(${Mph})` }}></ImageTile>
             <ImageTile style={{ backgroundImage: `url(${Rio})` }}></ImageTile>
             <ImageTile style={{ backgroundColor: `rgb(248, 248, 248)` }}></ImageTile>
           </ThreePicturesDiv>
