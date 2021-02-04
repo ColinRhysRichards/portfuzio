@@ -122,7 +122,7 @@ const H5 = styled.div`
     display: block;
     font-size: 1.6rem;
     margin-bottom: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
 color: white;
 `;
 
