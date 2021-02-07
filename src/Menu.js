@@ -55,14 +55,6 @@ const DesktopMenu = styled.div`
   background-color: white;
 `;
 
-// const Ul = styled.ul`
-//   position: relative;
-//   top: 0px;
-//   /* font-size: 24px; */
-//   padding: 0px;
-//   width: 100%;
-// `;
-
 const MenuLink = styled.h3`
   color: white;
   text-align: right;
@@ -71,24 +63,6 @@ const MenuLink = styled.h3`
   font-size: 2rem;
   align-self: center;
 `;
-
-// const Hover = styled.div`
-//   color: red;
-//   background-color: blue;
-//   text-align: right;
-//   margin: 0;
-//   font-weight: 500;
-//   font-size: 2rem;
-//   align-self: center;
-//   animation-name: ${Keyframes};
-//   animation-duration: 1.5s;
-//   animation-delay: .25s;
-//   animation-timing-function: 1.5s; 
-//   animation-iteration-count: 1;
-//   animation-direction: normal;
-//   animation-fill-mode: forwards;
-//   animation-play-state: running;
-// `;
 
 const DesktopMenuLink = styled.div`
   color: black;
