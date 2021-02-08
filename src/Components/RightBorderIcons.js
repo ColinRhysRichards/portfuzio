@@ -52,8 +52,6 @@ export default class RightBorderIcons extends React.Component {
   render() {
     return (
       <IconContainer>
-        {/* <FontAwesomeIcon icon={['fab', 'instagram']} style={mobileIcons} />
-        <FontAwesomeIcon icon={['fab', 'facebook']} style={mobileIcons} /> */}
         <A href="https://github.com/ColinRhysRichards" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} style={mobileIcons} /></A>
         <A href="mailto:colin.rhys.richards@gmail.com?Subject=Hello%20again" target="_top"><FontAwesomeIcon icon={['fab', 'google']} style={mobileIcons} /></A>
         <A href="https://www.linkedin.com/in/colin-richards-b5814b161/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} style={mobileIcons} /></A>

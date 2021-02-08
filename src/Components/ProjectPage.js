@@ -12,10 +12,6 @@ const ProjectContainer = styled.div`
   padding: 10%;
 `;
 
-// const DesktopContainer = styled.div`
-// margin-left: 20%;
-// `;
-
 const DesktopProjectOverview = styled.h5`
 margin-top: none;
 `;
@@ -132,7 +128,6 @@ export default class ProjectPage extends React.Component {
       <div>
         <Desktop>
           <ProjectContainer style={this.props.bgColor}>
-            {/* <BackButton /> */}
             <DesktopProjectOverview>Project Overview</DesktopProjectOverview>
             <ProjectTitle>{this.props.projectTitle}</ProjectTitle>
             <SiteDescription>{this.props.siteDescription}</SiteDescription>
