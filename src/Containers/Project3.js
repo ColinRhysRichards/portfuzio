@@ -7,9 +7,6 @@ import TopBorder from "../Components/TopBorder";
 import LeftBorderBackBtn from "../Components/LeftBorderBackBtn";
 import RightBorder from "../Components/RightBorder";
 import YellowBasketball from '../images/yellowbasketball.jpg';
-// import Localfluence1 from '../images/localfluence_login.PNG';
-// import Localfluence2 from '../images/localfluence_offer.PNG';
-// import Localfluence3 from '../images/localfluence_offer.PNG';
 import Jazz from "../images/jazzGame.JPG"
 import Court from "../images/court.jpg"
 import Hoop from "../images/hoop.jpg"
@@ -65,8 +62,6 @@ const Project3 = () => {
           planningResponse={"planned out in a planner"}
           bgImage={{ backgroundImage: `url(${YellowBasketball})` }}
           image={{ backgroundImage: `url(${Jazz})` }}
-          // image2={{ backgroundImage: `url(${Localfluence2})` }}
-          // image3={{ backgroundImage: `url(${Localfluence3})` }}
           sectionTitle={"React Memory Game"}
           sectionText={"This is a game that is built using React.js. In this game the user is trying to pick everyone on the Utah Jazz roster just once. If there is a duplicate pick then the game will reset."}
           link={"https://colinrhysrichards.github.io/Memory-Game-React/"}
