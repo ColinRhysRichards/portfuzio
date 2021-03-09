@@ -20,7 +20,8 @@ import RightBorder from "../Components/RightBorder";
 import TopBorder from "../Components/TopBorder";
 import FeaturedProjects from "../Components/FeaturedProjects";
 // import HeroImage from "../Components/HeroImage";
-import MainImg from "../images/city.jpg";
+import MainImg from "../images/ogden-background.jpg";
+import MobileMainImg from "../images/ogden-portrait.jpg"
 
 const TestWrapper = styled.div`
 
@@ -127,7 +128,7 @@ const Home = () => {
         <TestWrapper>
           <NavBar sectionHeading={"Home"} />
           <MobTitle
-            bgColor={{ backgroundImage: `url(${MainImg})` }}
+            bgColor={{ backgroundImage: `url(${MobileMainImg})` }}
             title={"hello,"}
             titleColor={{ color: 'white' }}
             // subTitle={"section about me"}
