@@ -138,21 +138,6 @@ animation-name: ${Textframes};
 
 
 export default class MobTitle extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.testTl = new TimelineLite({
-  //     paused: true
-  //   })
-  //     ;
-  //   this.titleTween = React.createRef();
-  // }
-
-  // componentDidMount() {
-  //   this.testTl
-  //     .from(this.titleTween, 2, { x: -50, autoAlpha: 0, ease: Power4.easeOut }, .25)
-
-  //     .play();
-  // }
 
   render() {
     return (

@@ -1,9 +1,6 @@
 // DEPENDENCIES
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-// import styled from "styled-components";
-// import Mobile from "./Mobile_Components/Mobile";
-// import Desktop from "./Mobile_Components/Desktop";
 
 // MOBILE CONTAINERS
 import Home from "./Containers/MobHomeView";
@@ -23,14 +20,6 @@ import Project3 from "./Containers/Project3";
 import GlobalStyle from "./GlobalStyles";
 import "./App.css";
 
-// const MobileContainer = styled.div`
-//   height: 100vh;
-//   width: 100vw;
-//   /* overflow: hidden; */
-//   margin: none;
-//   /* background-color: green; */
-// `;
-
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -42,7 +31,6 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        {/* <Hello name="Create cool burger menu using reactjs-popup" /> */}
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/project" component={Project} />
@@ -52,27 +40,6 @@ export default class App extends Component {
           <Route path="/project2" component={Project2} />
           <Route path="/project3" component={Project3} />
         </Switch>
-        {/* <Router>
-        <div>
-          <Popup
-            modal
-            overlayStyle={{
-              background: "rgba(155,255,255,0.90)"
-            }}
-            className={"popupClass"}
-            contentStyle={contentStyle}
-            closeOnDocumentClick={true}
-            trigger={open => <BurgerIcon open={open} />}
-          >
-            {close => <Menu close={close} />}
-          </Popup>
-
-          <Route exact path="/" component={Home} />
-          <Route path="/projects" component={Project} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </div>
-      </Router> */}
         <GlobalStyle />
       </div>
     );

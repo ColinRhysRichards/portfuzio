@@ -14,11 +14,9 @@ z-index: 9999;
 `;
 
 const MenuDiv = styled.div`
-/* display: grid; */
 grid-column: 2/3;
 grid-row: 1/2;
 text-align: left;
-/* align-self: flex-start; */
 `;
 
 const MainIcon = styled.h3`
