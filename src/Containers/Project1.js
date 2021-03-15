@@ -1,5 +1,4 @@
 import React from "react";
-// import NavBar from "../Components/NavBar";
 import styled from "styled-components";
 import ProjectPage from "../Components/ProjectPage";
 import Lawyer from '../images/utah-lawyer-homepage-hero-3.jpg';
@@ -13,10 +12,6 @@ import RBR from "../images/rbrMobile.JPG";
 import Spiral from "../images/spiral.jpg";
 import Red from "../images/redMountain.jpg";
 ;
-// const TestWrapper = styled.div`
-
-// height: 100%;
-// `;
 
 const BottomBorder = styled.div`
 height: 4rem;
@@ -69,8 +64,6 @@ const Project1 = () => {
           planningResponse={"Trello Board / Wireframes / Slack"}
           bgImage={{ backgroundImage: `url(${Lawyer})` }}
           image={{ backgroundImage: `url(${Study})` }}
-          // image2={{ backgroundImage: `url(${Localfluence2})` }}
-          // image3={{ backgroundImage: `url(${Localfluence3})` }}
           sectionTitle={"Richards & Richards Lawfirm"}
           sectionText={"This is a website built with React.js for Richards & Richards Lawfirm. The site is mobile responsive with a different interface than the desktop view."}
           link={"https://www.rbrlawgroup.com"}
