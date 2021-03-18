@@ -281,10 +281,6 @@ z-index: 9998;
   grid-template-rows: 10% 10% 10%;
   /* grid-row-gap: 1px; */
 }
-/* .test {
-  display: grid;
-  grid-template-columns: 20% auto auto 20%;
-} */
 
 .num1{
 grid-column-start: 2;
