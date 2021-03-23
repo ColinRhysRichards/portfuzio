@@ -1,7 +1,3 @@
-/* .body{
-  overflow: hidden;
-} */
-
 .loader {
   height: 100vh;
 }
@@ -92,7 +88,6 @@
   background-color: transparent;
   padding: 10px;
   transition: all 1s ease-out;
-  /* margin-left: auto; */
 }
 
 .burger-menu.open {
@@ -103,14 +98,12 @@
   z-index: 9999;
   background-color: rgba(255, 255, 255, 0);
   padding: 10px;
-  /* margin-left: auto; */
 }
 
 .burger-menu .bar1,
 .bar2,
 .bar3 {
   height: 3px;
-  /* background-color: #b2b2b2; */
   background-color: #23212c;
   margin-top: 4px;
   transition: 0.4s;
@@ -156,7 +149,6 @@
   background-color: transparent;
   padding: 5px;
   transition: all 1s ease-out;
-  /* margin-left: auto; */
 }
 
 .dburger-menu.open {
@@ -167,14 +159,12 @@
   z-index: 9999;
   background-color: white;
   padding: 5px;
-  /* margin-left: auto; */
 }
 
 .dburger-menu .dbar1,
 .dbar2,
 .dbar3 {
   height: 3px;
-  /* background-color: #b2b2b2; */
   background-color: black;
   margin-top: 4px;
   transition: 0.4s;
@@ -183,14 +173,12 @@
 
 .dbar1{
   width: 30px;
-  /* margin-left: auto; */
 }
 .dbar2{
   width: 30px;
 }
 .dbar3{
   width: 30px;
-  /* margin-left: auto; */
 }
 
 .dburger-menu.open .dbar1 {
@@ -250,7 +238,6 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 flex-wrap: nowrap;
 justify-content: flex-start;
 align-items: center;
-/* padding: 10px; */
 }
 
 .mobMainIcon{
@@ -292,20 +279,17 @@ justify-self: left;
   grid-column-start: 2;
 grid-column-end: 3;
 justify-self: left;
-/* align-self: left; */
 }
 
 .num3{
   grid-column-start: 2;
 grid-column-end: 3;
 justify-self: left;
-/* align-self: left; */
 }
 .num4{
 grid-column-start: 2;
 grid-column-end: 3;
 justify-self: left;
-/* align-self: left; */
 }
 .title4{
   /* justify-self: left;
