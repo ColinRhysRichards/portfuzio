@@ -121,24 +121,6 @@ const Project = () => {
           projectTitle={'Attorney Site'}
           projectSubText={'Richards and Richards Lawfirm'}
         />
-        {/* <ProjectCard
-          path={"/project2"}
-          to={"/project2"}
-          component={Project2}
-          className="projectViewProjectCard"
-          bgImage={{ backgroundImage: `url(${Luffy})` }}
-          projectTitle={'Application'}
-          projectSubText={'Pirate King'}
-        /> */}
-        {/* <ProjectCard
-          path={"/project3"}
-          to={"/project3"}
-          component={Project3}
-          className="projectViewProjectCard"
-          bgImage={{ backgroundImage: `url(${Html})` }}
-          projectTitle={'Game'}
-          projectSubText={'Game using HTML'}
-        /> */}
         <ProjectCard
           path={"/project3"}
           to={"/project3"}
@@ -148,15 +130,6 @@ const Project = () => {
           projectTitle={'Game'}
           projectSubText={'React Memory Game'}
         />
-        {/* <ProjectCard
-          path={"/project3"}
-          to={"/project3"}
-          component={Project3}
-          className="projectViewProjectCard"
-          bgImage={{ backgroundImage: `url(${Study})` }}
-          projectTitle={'Online Site'}
-          projectSubText={'The Bookstore'}
-        /> */}
         <MobFooter />
       </Mobile>
     </div>
