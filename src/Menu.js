@@ -73,40 +73,7 @@ const DesktopMenuLink = styled.div`
   align-self: center;
   transition:all 1s ease;
   background: white;
-    /* Old browsers */
-    /* background: linear-gradient(to right, blue 50%, white 50%);
-    background-size: 200% 100%;
-    background-position:right bottom;
-  :hover {
-    background-color: red;
-    color: black;
-  text-align: right;
-  margin: 0;
-  font-weight: 500;
-  font-size: 2rem;
-  align-self: center;
-  background-position:left bottom; */
-
-  /* animation-name: ${KeyframesX};
-  animation-duration: 1.5s;
-  animation-delay: .25s;
-  animation-timing-function: 1.5s; 
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running; */
-  }
-`
-
-// const NavLinkContainer = styled.div`
-// justify-content: space-between;
-// display: flex;
-// grid-column: 2 / 3;
-// grid-row: 2 / 3;
-// align-self: center;
-// text-align: left;
-// width: 100%;
-// `;
+`;
 
 const Name = styled.h3`
 font-weight: 500;
@@ -264,7 +231,6 @@ export default ({ close }) => (
   <>
     <Desktop>
       <DesktopMenu>
-
         <DesktopNavigationContainer>
           <NavLink
             className="navigationLink test"
