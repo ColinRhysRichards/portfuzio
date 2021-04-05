@@ -26,7 +26,7 @@ export default class App extends Component {
     this.state = {};
   }
 
-  componentWillMount() { }
+  // componentWillMount() { }
 
   render() {
     return (
