@@ -21,7 +21,7 @@ import TopBorder from "../Components/TopBorder";
 import FeaturedProjects from "../Components/FeaturedProjects";
 // import HeroImage from "../Components/HeroImage";
 import MainImg from "../images/ogden-background.jpg";
-import MobileMainImg from "../images/ogden-portrait.jpg"
+import MobileMainImg from "../images/me_sepia.jpg"
 
 const TestWrapper = styled.div`
 
@@ -116,8 +116,8 @@ const Home = () => {
               component={Project3}
               className="projectViewProjectCard"
               bgImage={{ backgroundImage: `url(${NBA})` }}
-              projectTitle={'Online Site'}
-              projectSubText={'The Bookstore'}
+              projectTitle={'Game'}
+              projectSubText={'React Memory Game'}
             />
           </ProjectCardContainer>
           <Footer />
@@ -161,8 +161,8 @@ const Home = () => {
             component={Project3}
             className="projectViewProjectCard"
             bgImage={{ backgroundImage: `url(${NBA})` }}
-            projectTitle={'Online Site'}
-            projectSubText={'The Bookstore'}
+            projectTitle={'Game'}
+            projectSubText={'React Memory Game'}
           />
           <SkillSection>
             <H4>Front End Development</H4>
