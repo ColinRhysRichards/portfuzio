@@ -109,7 +109,7 @@ const About = () => {
           <TextSection>
             <TextSectionTitle>"coLIn rIcHards"</TextSectionTitle>
             <TextSectionText>
-              <h4>I currently live in Salt Lake City, Utah. I graduated from the University of Utah and also completed a coding bootcamp. I enjoy spending time with family and friends. Living a healthy lifestyle is very important to me, I . I love travelling </h4></TextSectionText>
+              <h4>I currently live in Salt Lake City, Utah. I graduated from the University of Utah and also completed a coding bootcamp. I enjoy spending time with family and friends.</h4></TextSectionText>
           </TextSection>
 
           <ThreePicturesDiv>
