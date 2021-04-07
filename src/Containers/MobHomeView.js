@@ -135,7 +135,6 @@ const Home = () => {
             titleText={"I'm Colin Richards a web developer"}
           // finalText={"final little outro text if I need any"}  
           />
-          {/* <HeroImage src={WalkerBuilding}></HeroImage> */}
           <FeaturedProjects />
           <ProjectCard
             path={"/project2"}
