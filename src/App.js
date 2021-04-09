@@ -10,7 +10,7 @@ import Contact from "./Containers/MobContactView";
 import Project1 from "./Containers/Project1";
 import Project2 from "./Containers/Project2";
 import Project3 from "./Containers/Project3";
-
+//figuring it out
 
 // TABLET CONTAINERS
 
@@ -23,7 +23,7 @@ import "./App.css";
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    // this.state = {};
   }
 
   // componentWillMount() { }

@@ -21,16 +21,16 @@ const Keyframes = keyframes`
 }
 `;
 
-const KeyframesX = keyframes`
-0% {
-  transform: translateX(-2rem)
-;
-}
-100% {
-  transform: translateX(0rem);
-  opacity: 1;
-}
-`;
+// const KeyframesX = keyframes`
+// 0% {
+//   transform: translateX(-2rem)
+// ;
+// }
+// 100% {
+//   transform: translateX(0rem);
+//   opacity: 1;
+// }
+// `;
 
 library.add(fab)
 
