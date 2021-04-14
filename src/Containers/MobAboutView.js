@@ -88,7 +88,6 @@ padding: 2rem;
 height: 80vh;
 `;
 
-// #926d79
 const About = () => {
   return (
     <div>
