@@ -21,7 +21,7 @@ import TopBorder from "../Components/TopBorder";
 import FeaturedProjects from "../Components/FeaturedProjects";
 // import HeroImage from "../Components/HeroImage";
 import MainImg from "../images/ogden-background.jpg";
-import MobileMainImg from "../images/ogden-portrait.jpg"
+import MobileMainImg from "../images/me_sepia.jpg"
 
 const TestWrapper = styled.div`
 
