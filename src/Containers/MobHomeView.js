@@ -83,8 +83,6 @@ const Home = () => {
             titleColor={{ color: 'white' }}
             // subTitle={"section about me"}
             titleText={"I'm Colin Richards a web developer"}
-          // finalText={"final little outro text if I need any"} 
-
           />
           {/* 
           <HeroImage src={Slc}></HeroImage> */}
