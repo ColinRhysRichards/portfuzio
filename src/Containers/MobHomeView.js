@@ -77,11 +77,9 @@ const Home = () => {
         <BottomBorder></BottomBorder>
         <DesktopWrapper>
           <DesktopTitle
-            // bgColor={{ background: "linear-gradient(to bottom, #f8f8f8 45% , #926d8c 45%)" }}
             bgColor={{ backgroundImage: `url(${MainImg})` }}
             title={"Hello, I'm Colin"}
             titleColor={{ color: 'white' }}
-            // subTitle={"section about me"}
             titleText={"I'm Colin Richards a web developer"}
           />
           {/* 
