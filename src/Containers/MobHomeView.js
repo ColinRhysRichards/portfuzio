@@ -82,8 +82,6 @@ const Home = () => {
             titleColor={{ color: 'white' }}
             titleText={"I'm Colin Richards a web developer"}
           />
-          {/* 
-          <HeroImage src={Slc}></HeroImage> */}
           <FeaturedProjects
             strokeColor={{ webkitTextStrokeColor: "#ff253a" }}
           />
@@ -127,11 +125,8 @@ const Home = () => {
             bgColor={{ backgroundImage: `url(${MobileMainImg})` }}
             title={"hello,"}
             titleColor={{ color: 'white' }}
-            // subTitle={"section about me"}
             titleText={"I'm Colin Richards a web developer"}
-          // finalText={"final little outro text if I need any"}  
           />
-          {/* <HeroImage src={WalkerBuilding}></HeroImage> */}
           <FeaturedProjects />
           <ProjectCard
             path={"/project2"}
