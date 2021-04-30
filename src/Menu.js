@@ -98,15 +98,6 @@ const DesktopMenuLink = styled.div`
   }
 `
 
-// const NavLinkContainer = styled.div`
-// justify-content: space-between;
-// display: flex;
-// grid-column: 2 / 3;
-// grid-row: 2 / 3;
-// align-self: center;
-// text-align: left;
-// width: 100%;
-// `;
 
 const Name = styled.h3`
 font-weight: 500;
