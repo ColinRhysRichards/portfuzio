@@ -175,11 +175,9 @@ background-Color: white;
 grid-column: 2 / 3;
 grid-row: 2 / 4;
 display: grid;
-/* grid-template-rows: repeat(4, 25%); */
 width: 100%;
 align-self: center;
 text-align: left;
-/* justify-content: space-between; */
 opacity: 0;
 
  animation-name: ${Keyframes};
