@@ -24,7 +24,6 @@ const Load = ({ hideLoader }) => {
     </BrowserRouter>
   );
 }
-// setTimeout(() =>
 ReactDOM.render(
   <Load
     hideLoader={hideLoader}
