@@ -4,7 +4,7 @@ import Desktop from "./Components/Desktop";
 
 
 
-export default ({ open, ...props }) => (
+ const Ham = ({ open, ...props }) => (
   <>
     <Desktop>
       <div className={open ? "dburger-menu open" : "dburger-menu"} {...props}>
@@ -23,3 +23,5 @@ export default ({ open, ...props }) => (
     </Mobile>
   </>
 );
+
+export default Ham;

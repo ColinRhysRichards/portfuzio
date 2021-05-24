@@ -227,7 +227,7 @@ opacity: 0;
   animation-play-state: running;
 `;
 
-export default ({ close }) => (
+const HamMenu = ({ close }) => (
   <>
     <Desktop>
       <DesktopMenu>
@@ -344,3 +344,5 @@ export default ({ close }) => (
     </Mobile>
   </>
 );
+
+export default HamMenu;
